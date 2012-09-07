@@ -1,0 +1,101 @@
+<!--{subtemplate home/space_header}-->
+<link rel="stylesheet" type="text/css" href="template/we54/home/space_index.css" />
+<div id="ct" class="wp w cl web_all">
+	<div id="diypage" class="area">
+		<div id="frame1" class="frame cl" noedit="1">
+			<!--{subtemplate home/space_left_nav}-->
+
+			<div id="frame1_center" class="z column">
+				<!--{if empty($centerlist)}-->
+				<div id="center_temp" class="move-span temp"></div>
+				<!--{/if}-->
+				<!--{loop $centerlist $key $value}-->
+					<!--{if !empty($key)}-->
+						<div id="$key" class="block move-span">
+							$value
+						</div>
+					<!--{/if}-->
+				<!--{/loop}-->
+			</div>
+
+			<!--{if (strlen($userdiy['currentlayout']) > 3) }-->
+			<div id="frame1_right" class="z column">
+				<!--{if empty($rightlist)}-->
+				<div id="right_temp" class="move-span temp"></div>
+				<!--{/if}-->
+				<!--{loop $rightlist $key $value}-->
+				<!--{if !empty($key)}-->
+					<div id="$key" class="block move-span">
+						$value
+					</div>
+				<!--{/if}-->
+				<!--{/loop}-->
+			</div>
+			<!--{/if}-->
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+function succeedhandle_followmod(url, msg, values) {
+	var fObj = $('followmod');
+	if(values['type'] == 'add') {
+	//	fObj.innerHTML = '取消收听';
+		fObj.className = 'yguanzhu';
+		fObj.href = 'home.php?mod=spacecp&ac=follow&op=del&fuid='+values['fuid'];
+	} else if(values['type'] == 'del') {
+	//	fObj.innerHTML = '收听TA';
+		fObj.className = 'guanzhu';
+		fObj.href = 'home.php?mod=spacecp&ac=follow&op=add&hash={FORMHASH}&fuid='+values['fuid'];
+	}
+}
+</script>
+<script type="text/javascript">
+function follow_change(id,url,values){
+	var fObj = $(id);
+	if (fObj.innerHTML=='未关注')
+	{
+		fObj.innerHTML = '已关注';
+		fObj.className = 'gzbtn';
+		fObj.href = 'home.php?mod=spacecp&ac=follow&op=del&fuid='+values;
+	}else if(fObj.innerHTML == '已关注') {
+		fObj.innerHTML = '未关注';
+		fObj.className = 'wgzbtn';
+		fObj.href = 'home.php?mod=spacecp&ac=follow&op=add&hash={FORMHASH}&fuid='+values;
+	}
+}
+</script>
+<!--{subtemplate common/footer}-->

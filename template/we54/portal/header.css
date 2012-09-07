@@ -1,0 +1,96 @@
+@charset "gb2312";
+/* CSS Document */
+
+body		{ background: url(/template/we54/por_images/body_bg.jpg);}
+* { margin:0; padding:0; border:0; }
+.box_wai { background: url(/template/we54/por_images/header_bg.jpg) repeat-x top; } 
+/*kaiser*/
+#toptb #diy-tg_menu{ margin:-2px 0 0 -18px;}
+.xg2 img{ width:763px; height:165px;}
+#scbar_txt{ width:147px; font-family:"微软雅黑", "黑体"; border:1px solid #bdb378;}
+#scbar_btn{ margin:6px 0 0 3px; background:url(/template/we54/images/all_bg.jpg) no-repeat -180px -74px;}
+.block { margin:0;}
+
+
+
+#toptb a { padding:0; }
+
+
+.top_header { width:1000px; height:36px; overflow:hidden;}
+.zzz { width:197px; height:31px; padding:0 0 0 3px; float:left; line-height:36px;}
+.zzz a { color:#666666;}
+.dl_zc { line-height:36px; float:right; color:#666666; }
+.dl_zc a { text-decoration:none; color:#336699; float:none; font-family:"宋体";}
+.dl_zc span { float:right;}
+.dl_zc i { float:right;}
+.nav 		{ width:90px; height:28px; float:right; position:relative; cursor:pointer; background:url(/template/we54/por_images/xl_nav.jpg) no-repeat; margin-left:15px; margin-top:8px; display:inline; }
+
+
+#um{ padding:6px 0 0 0;}
+#um a{ color:#0035a0;}
+
+/*顶部主导航*/
+.main_nav				 { width:316px; height:352px; padding:2px 2px 2px 2px; border-bottom:1px #dbdbdb solid; border-left:1px #dbdbdb solid; border-right:1px #dbdbdb solid; z-index:99999; background:#FFFFFF; display:none; position:absolute; top:28px; right:0;  float:left; overflow:hidden;}
+	.zx_nav { width:316px; height:88px; background-color:#f7f7f7; overflow:hidden; float:left;}
+	.zx_sec_nav { width:210px; height:65px; overflow:hidden; float:left; margin:23px 0 0 3px; display:inline;}
+	.zx_sec_nav span { height:14px; margin-bottom:14px; padding:0 12px 0 12px; display:inline; overflow:hidden; float:left;}
+	.main_nav a { color:#4d4d4d;}
+	.main_nav a:hover { color:#ff6600;}
+	.tyty { overflow:hidden; float:left;}
+
+	.hd_nav { width:316px; height:88px; background-color:#fff; overflow:hidden; float:left;}
+	.zx_sec_nav { width:210px; height:65px; overflow:hidden; float:left; margin:23px 0 0 3px; display:inline;}
+	.zx_sec_nav span { height:20px; margin-bottom:8px; padding:0 12px 0 12px; display:inline; overflow:hidden; float:left;}
+
+
+	.sq_nav { width:316px; height:88px; background-color:#fff; overflow:hidden; float:left;}
+	.sq_sec_nav { width:248px; height:65px; overflow:hidden; float:left; margin:23px 0 0 6px; display:inline;}
+	.sq_sec_nav span { height:20px; margin-bottom:8px; padding:0 7px 0 7px; display:inline; overflow:hidden; float:left;}
+
+
+
+.top_ad { width:1000px; height:126px; overflow:hidden; float:left;}
+
+
+
+/*二级导航*/
+.nav_st { width:1000px; height:155px; margin-bottom:10px; display:inline; overflow:hidden; float:left; }
+	.nav_second { width:1000px; height:40px; background-position:0 -103px; overflow:hidden; float:left;}
+	.nav_nav { width:600px; height:40px;line-height:44px; font-size:18px; font-family:"微软雅黑","黑体"; margin-left:27px; display:inline; overflow:hidden; float:left;}	
+	.nav_nav span { height:40px; padding:0 15px 0 15px;text-align:center; overflow:hidden; float:left;}
+	.nav_nav span a { height:40px; color:#663300; }
+	.nav_nav span a:hover { text-decoration:none;}
+	.nav_nav span:hover {  height:40px; text-decoration:none; background:url(/template/we54/por_images/size_bg.jpg) repeat-x; *background:url(/template/we54/por_images/size_bg.jpg) repeat-x !important; float:left; overflow:hidden;}
+
+	.ggg { padding:0 0 0 3px; width:147px; _width:147px;  height:22px; margin:9px 0 0 135px; line-height:24px; color:#999999; display:inline; border:1px solid #bdb378; background-color:#fffef0; overflow:hidden; float:left;}
+	.aaa { width:77px; height:26px; margin:6px 0 0 3px; display:inline; overflow:hidden; float:left; background-position:-180px -74px; cursor:pointer;}
+	.aaa:hover { background-position:-257px -74px;}
+
+	
+
+/*三级导航下广告*/
+.ad03_ad04 { width:1000px; height:60px; overflow:hidden; float:left;}
+	.ad03 { width:496px; height:60px; overflow:hidden; float:left; margin-right:8px; display:inline;}
+	.ad04 { width:496px; height:60px; overflow:hidden; float:left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
