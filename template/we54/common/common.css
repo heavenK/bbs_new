@@ -725,7 +725,7 @@ CSS 写作注意事项：
 	Explain:		面包屑导航
 	Last Modify:	lushnis
 */
-	#pt { margin: 2px 0; height: 29px; border:none; background: transparent; line-height: 29px; }
+	#pt { height: 29px; border:none; background: transparent; line-height: 29px; }
 		#pt .z { padding-right: 10px; }
 		#pt .z a, #pt .z em, #pt .z span { float: left; height: 29px; }
 		#pt .z em { width: 20px; background: url({IMGDIR}/pt_item.png) no-repeat 3px 10px; line-height: 200px; overflow: hidden; }
