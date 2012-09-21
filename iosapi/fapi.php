@@ -12,9 +12,9 @@ $pageat = isset($_GET['pageat']) ? $_GET['pageat'] : 1;
 $pageby = isset($_GET['pageby']) ? $_GET['pageby'] : 10;
 $type = isset($_GET['type']) ? $_GET['type'] : 0;
 
-if($section == 0) $typeid = 29;
-elseif($section == 1) $typeid = 28;
-elseif($section == 2) $typeid = 30;
+if($section == 0) $typeid = 43;
+elseif($section == 1) $typeid = 42;
+elseif($section == 2) $typeid = 44;
 else {
 	$typeid = null;
 	$section = 3;
@@ -25,7 +25,7 @@ else {
 $start = ($pageat-1) * $pageby ;
 $limit = $pageby;
 
-$query = C::t('forum_thread')->fetch_all_by_fid_typeid_digest_displayorder(1005 , $typeid, null, '=', $start, $limit, $type);
+$query = C::t('forum_thread')->fetch_all_by_fid_typeid_digest_displayorder(1004 , $typeid, null, '=', $start, $limit, $type);
 
 if(!$query) {
 	$forumlist['err'] = 2;
@@ -41,9 +41,9 @@ foreach($query as $p){
 	$forumlist['thread'][$i]['subject'] = iconv('gbk','utf-8',$p['subject']);
 	$forumlist['thread'][$i]['author'] = iconv('gbk','utf-8',$p['author']);
 	
-	if($p['typeid'] == 29) $section = 0;
-	elseif($p['typeid'] == 28) $section = 1;
-	elseif($p['typeid'] == 30) $section = 2;
+	if($p['typeid'] == 43) $section = 0;
+	elseif($p['typeid'] == 42) $section = 1;
+	elseif($p['typeid'] == 44) $section = 2;
 	else {
 		$section = 3;
 	}

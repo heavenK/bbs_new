@@ -7,7 +7,7 @@ require '../source/function/function_forum.php';
 
 C::app()->init();
 
-$sql = 'SELECT authorid,author,count(author) FROM '.DB::table('forum_thread').' WHERE fid=1005 GROUP BY authorid ORDER BY COUNT(author) DESC LIMIT 0,30';
+$sql = 'SELECT authorid,author,count(author) FROM '.DB::table('forum_thread').' WHERE fid=743 GROUP BY authorid ORDER BY COUNT(author) DESC LIMIT 0,30';
 
 
 
