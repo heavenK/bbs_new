@@ -8,9 +8,9 @@ require '../source/function/function_forum.php';
 C::app()->init();
 
 $section = isset($_REQUEST['section']) ? $_REQUEST['section'] : 0;
-if($section == 0) $typeid = 29;
-elseif($section == 1) $typeid = 28;
-elseif($section == 2) $typeid = 30;
+if($section == 0) $typeid = 43;
+elseif($section == 1) $typeid = 42;
+elseif($section == 2) $typeid = 44;
 else {
 	$typeid = 0;
 }
@@ -28,7 +28,7 @@ $author = iconv('utf-8','gbk',$author);
 
 if($res['err'] != 1){
 	$newthread = array(
-			'fid' => 1005,
+			'fid' => 1004,
 			'posttableid' => 0,
 			'readperm' => 0,
 			'price' => 0,
@@ -56,7 +56,7 @@ if($res['err'] != 1){
 	$tid = C::t('forum_thread')->insert($newthread, true);
 	
 	$pid = insertpost(array(
-			'fid' => 1005,
+			'fid' => 1004,
 			'tid' => $tid,
 			'first' => '0',
 			'author' => $author,
@@ -78,6 +78,7 @@ if($res['err'] != 1){
 			'status' => 100
 		));
 	if($pid) {
+		C::t('forum_forum')->update_forum_counter(1005, 0, 1, 1);
 		$res['tid'] = $tid;
 		$res['pid'] = $pid;
 		$res['err'] = 0;
