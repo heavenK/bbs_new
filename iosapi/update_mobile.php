@@ -1,4 +1,7 @@
 <?php
+
+exit;
+
 define('APPTYPEID', 2);
 define('CURSCRIPT', 'forum');
 
