@@ -82,11 +82,11 @@ if($res['err'] != 1){
 		
 		cut_pic($path.$attachments,$covername);
 		
-		$cover = 1;
+		$cover_num = 0;
 		
-		$cover = C::t('forum_attachment_n')->count_image_by_id('tid:'.$tid, 'pid', $pid);
+		$cover_num = C::t('forum_attachment_n')->count_image_by_id('tid:'.$tid, 'pid', $pid);
 		
-		C::t('forum_thread')->update($tid, array('cover' => $cover));
+		C::t('forum_thread')->update($tid, array('cover' => $cover_num));
 	}
 	
 	$res['aid'] = $aid;
