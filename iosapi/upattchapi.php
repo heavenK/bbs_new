@@ -83,7 +83,7 @@ if($res['err'] != 1){
 		cut_pic($path.$attachments,$covername);
 		
 		$cover = 1;
-		$attachtable = 'aid:'.$aid;
+		$attachtable = 'pid:'.$pid;
 		$cover = C::t('forum_attachment_n')->count_image_by_id($attachtable, 'pid', $pid);
 		
 		C::t('forum_thread')->update($tid, array('cover' => $cover));
