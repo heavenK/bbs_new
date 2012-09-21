@@ -85,6 +85,7 @@ if($res['err'] != 1){
 		$cover_num = 0;
 		
 		$cover_num = C::t('forum_attachment_n')->count_image_by_id('tid:'.$tid, 'pid', $pid);
+		file_put_contents(time().".log", $cover_num);
 		
 		C::t('forum_thread')->update($tid, array('cover' => $cover_num));
 	}
