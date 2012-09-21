@@ -20,7 +20,7 @@ $author = iconv('utf-8','gbk',$author);
 
 if($res['err'] != 1){
 $pid = insertpost(array(
-		'fid' => 1005,
+		'fid' => 1004,
 		'tid' => $tid,
 		'first' => '0',
 		'author' => $author,
@@ -42,7 +42,9 @@ $pid = insertpost(array(
 		'status' => 100
 	));
 if($pid) {
+	
 	updatethreadcount($tid,0);
+	C::t('forum_forum')->update_forum_counter(1005, 0, 1, 1);
 	$res['tid'] = $tid;
 	$res['pid'] = $pid;
 	$res['err'] = 0;
