@@ -41,9 +41,9 @@ class logging_ctl {
 		$seccodecheck = $from_connect ? false : $this->setting['seccodestatus'] & 2;
 		$seccodestatus = !empty($_GET['lssubmit']) ? false : $seccodecheck;
 		$invite = getinvite();
-
-		if(!submitcheck('loginsubmit', 1, $seccodestatus)) {
 		$_GET['cookietime']=2592000;
+		if(!submitcheck('loginsubmit', 1, $seccodestatus)) {
+		
 			$auth = '';
 			$username = !empty($_G['cookie']['loginuser']) ? dhtmlspecialchars($_G['cookie']['loginuser']) : '';
 
@@ -609,13 +609,28 @@ class register_ctl {
 
 			if(!$activation) {
 				$uid = uc_user_register(addslashes($username), $password, $email, $questionid, $answer, $_G['clientip']);
-
+				
 				if($uid <= 0) {
 					if($uid == -1) {
+						if($_GET['phone_reg']){
+							$res['registerCheck'] = -1;
+							echo json_encode($res);
+							exit;
+						}
 						showmessage('profile_username_illegal');
 					} elseif($uid == -2) {
+						if($_GET['phone_reg']){
+							$res['registerCheck'] = -2;
+							echo json_encode($res);
+							exit;
+						}
 						showmessage('profile_username_protect');
 					} elseif($uid == -3) {
+						if($_GET['phone_reg']){
+							$res['registerCheck'] = -3;
+							echo json_encode($res);
+							exit;
+						}
 						showmessage('profile_username_duplicate');
 					} elseif($uid == -4) {
 						showmessage('profile_email_illegal');
@@ -624,6 +639,11 @@ class register_ctl {
 					} elseif($uid == -6) {
 						showmessage('profile_email_duplicate');
 					} else {
+						if($_GET['phone_reg']){
+							$res['registerCheck'] = -4;
+							echo json_encode($res);
+							exit;
+						}
 						showmessage('undefined_action');
 					}
 				}
@@ -707,6 +727,12 @@ class register_ctl {
 			}else if($pass=="nicknameexist"){
 				uc_user_delete($uid);
 				C::t('common_member')->delete_no_validate($uid);
+				
+				if($_GET['phone_reg']){
+					$res['registerCheck'] = -5;
+					echo json_encode($res);
+					exit;
+				}
 				showmessage('nickname_exists');
 			}else{
 				uc_user_delete($uid);
@@ -879,6 +905,11 @@ class register_ctl {
 				'</script>',
 				'striptags' => false,
 			);
+			if($_GET['phone_reg']){
+				$res['registerCheck'] = 1;
+				echo json_encode($res);
+				exit;
+			}
 			showmessage($message, $url_forward, $param, $extra);
 		}
 	}
