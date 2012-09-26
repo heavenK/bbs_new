@@ -8,9 +8,9 @@ require '../source/function/function_forum.php';
 C::app()->init();
 
 $section = isset($_REQUEST['section']) ? $_REQUEST['section'] : 0;
-if($section == 0) $typeid = 43;
-elseif($section == 1) $typeid = 42;
-elseif($section == 2) $typeid = 44;
+if($section == 0) $typeid = 29;
+elseif($section == 1) $typeid = 28;
+elseif($section == 2) $typeid = 30;
 else {
 	$typeid = 0;
 }
