@@ -20,7 +20,7 @@ $author = iconv('utf-8','gbk',$author);
 
 if($res['err'] != 1){
 $pid = insertpost(array(
-		'fid' => 1004,
+		'fid' => 1005,
 		'tid' => $tid,
 		'first' => '0',
 		'author' => $author,
