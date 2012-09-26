@@ -28,7 +28,7 @@ $author = iconv('utf-8','gbk',$author);
 
 if($res['err'] != 1){
 	$newthread = array(
-			'fid' => 1004,
+			'fid' => 1005,
 			'posttableid' => 0,
 			'readperm' => 0,
 			'price' => 0,
@@ -56,7 +56,7 @@ if($res['err'] != 1){
 	$tid = C::t('forum_thread')->insert($newthread, true);
 	
 	$pid = insertpost(array(
-			'fid' => 1004,
+			'fid' => 1005,
 			'tid' => $tid,
 			'first' => '0',
 			'author' => $author,

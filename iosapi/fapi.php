@@ -25,7 +25,7 @@ else {
 $start = ($pageat-1) * $pageby ;
 $limit = $pageby;
 
-$query = C::t('forum_thread')->fetch_all_by_fid_typeid_digest_displayorder(1004 , $typeid, null, '=', $start, $limit, $type);
+$query = C::t('forum_thread')->fetch_all_by_fid_typeid_digest_displayorder(1005 , $typeid, null, '=', $start, $limit, $type);
 
 if(!$query) {
 	$forumlist['err'] = 2;
