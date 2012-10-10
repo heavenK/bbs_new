@@ -57,7 +57,7 @@ $_config['cookie']['cookiepath'] = '/';
 // -------------------------  CONFIG SECURITY  -------------------------- //
 $_config['security']['authkey'] = 'de8372jMHufpteHs';
 $_config['security']['urlxssdefend'] = 1;
-$_config['security']['attackevasive'] = '0';
+$_config['security']['attackevasive'] = '8';
 $_config['security']['querysafe']['status'] = 1;
 $_config['security']['querysafe']['dfunction']['0'] = 'load_file';
 $_config['security']['querysafe']['dfunction']['1'] = 'hex';
