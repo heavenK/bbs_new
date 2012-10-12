@@ -1,5 +1,5 @@
 <!--{if empty($diymode)}-->
-<!--{template common/other_header}-->
+<!--{template common/space_other_header}-->
 <link rel="stylesheet" type="text/css" href="{$_G[siteurl]}template/we54/common/king_space.css" />
 
 <div id="pt" class="bm cl">
@@ -195,7 +195,7 @@
 							<div id="friend_ul">
 								<ul class="buddy cl">
 								<!--{loop $list $key $value}-->
-									<li id="friend_{$value[uid]}_li">
+									<li id="friend_{$value[uid]}_li" style="width:397px;">
 									<!--{if $value[username] == ''}-->
 										<div class="avt"><img src="{STATICURL}image/magic/hidden.gif" alt="{lang anonymity}" /></div>
 										<h4>{lang anonymity}</h4>
@@ -219,7 +219,7 @@
 											<!--{/if}-->
 											</span>
 											<a href="home.php?mod=space&uid=$value[uid]"{eval g_color($value[groupid]);}>$value[username]</a>
-											<!--{eval g_icon($value[groupid]);}-->
+											
 											<!--{if $value['videostatus']}-->
 												<img src="{IMGDIR}/videophoto.gif" alt="videophoto" class="vm" />
 											<!--{/if}-->
@@ -229,7 +229,7 @@
 										</h4>
 										<p class="maxh">$value[recentnote]</p>
 									<!--{/if}-->
-										<div class="xg1" style=" width:165px;">
+										<div class="xg1" style=" width:185px;">
 											<!--{if isset($value['follow']) && $key != $_G['uid'] && $value[username] != ''}-->
 											<a href="home.php?mod=spacecp&ac=follow&op={if $value['follow']}del{else}add{/if}&fuid=$value[uid]&hash={FORMHASH}&from=a_followmod_" id="a_followmod_$key" onclick="showWindow('followmod', this.href, 'get', 0)"><!--{if $value['follow']}-->{lang follow_del}<!--{else}-->{lang follow_add}TA<!--{/if}--></a>
 											<!--{/if}-->
@@ -367,3 +367,13 @@
 	</div><!--{/if}-->
 <!--{/if}-->
 <!--{template common/footer}-->
+
+
+<style>
+.buddy_group a { color:#996633;}
+.buddy li  { height:62px; padding-top:14px; padding-left:75px;}
+.avt img { width:50px; height:50px; }
+.card { padding: 0; width: 295px !important; border-color:#fff; background: #fff; border:0; }
+.p_pop, .p_pof, .sllt { box-shadow:0 0 0 0;}
+
+</style>

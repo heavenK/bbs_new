@@ -226,6 +226,7 @@ function uploadSuccess(file, serverData) {
 			var data = eval('('+serverData+')');
 			if(parseInt(data.picid)) {
 				var newTr = document.createElement("TR");
+				newTr.id = 'attach_'+data.picid;
 				var newTd = document.createElement("TD");
 				var img = new Image();
 				img.src = data.url;

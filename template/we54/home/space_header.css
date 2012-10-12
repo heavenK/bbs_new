@@ -1,6 +1,6 @@
 /*通用样式*/
 *			{ margin:0; padding:0; border:0;}
-body		{ background:#fff url(/template/we54/images/home_top_bg.jpg) repeat-x top; font-size:12px; font-family:"宋体"; color:#000;}
+body		{ background:#fff url(/template/we54/images/home_top_bg.jpg) repeat-x top; font-size:12px; font-family:"微软雅黑","宋体"; color:#000;}
 a           { text-decoration:none; }
 a:hover     { text-decoration:underline;}
 .wp         { width:1000px;}
@@ -29,7 +29,7 @@ a:hover     { text-decoration:underline;}
 #um a{ color:#0035a0;}
 
 
-.person_name { width:1000px; height:81px; background:url(../images/home_top_banner.jpg) no-repeat; margin:auto;}
+.person_name { width:1000px; height:84px; background:url(../images/home_top_banner.jpg) no-repeat; margin:auto;}
 .person_name span { line-height:80px; font-size:20px; padding-left:15px;}
 /*顶部主导航*/
 .main_nav				 { width:316px; height:352px; padding:2px 2px 2px 2px; border-bottom:1px #dbdbdb solid; border-left:1px #dbdbdb solid; border-right:1px #dbdbdb solid; z-index:9999; background:#FFFFFF; display:none; position:absolute; top:28px; right:0; _right:-1px; float:left; overflow:hidden;}
