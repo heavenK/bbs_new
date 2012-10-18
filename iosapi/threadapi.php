@@ -79,6 +79,7 @@ if($res['err'] != 1){
 		));
 	if($pid) {
 		C::t('forum_forum')->update_forum_counter(1005, 0, 1, 1);
+		C::t('common_member_count')->increase($uid, array('extcredits6'=>1));
 		$res['tid'] = $tid;
 		$res['pid'] = $pid;
 		$res['err'] = 0;
