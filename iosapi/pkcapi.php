@@ -16,7 +16,7 @@ $pageby = isset($_GET['pageby']) ? $_GET['pageby'] : 10;
 $start = ($pageat-1) * $pageby ;
 $limit = $pageby;
 
-$query = C::t('forum_thread')->fetch_all_by_authorid($uid, $start, $limit);
+$query = C::t('forum_thread')->fetch_all_by_authorid_displayorder($uid, null, '=', null, '', $start, $limit, null, 1005);
 
 if(!$query) {
 	$forumlist['err'] = 2;
