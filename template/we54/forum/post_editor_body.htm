@@ -102,7 +102,11 @@
 			<!--{/if}-->
 		</div>
 	</div>
-
+		<!--{if ($_G['forum']['allowhtml'] || ($_GET[action] == 'edit' && ($orig['htmlon'] & 1))) && $_G['group']['allowhtml']}-->
+			<p class="mbn"><input type="checkbox" name="htmlon" id="htmlon" class="pc" value="1" $htmloncheck /><label for="htmlon">{lang post_html}</label></p>
+		<!--{else}-->
+			<p class="mbn"><input type="checkbox" name="htmlon" id="htmlon" class="pc" value="0" $htmloncheck disabled="disabled" /><label for="htmlon">{lang post_html}</label></p>
+		<!--{/if}-->
 	<div id="rstnotice" class="ntc_l bbs" style="display:none">
 		<a href="javascript:;" title="{lang post_topicreset}" class="d y" onclick="userdataoption(0)">close</a>{lang missed_data} <a class="xi2" href="javascript:;" onclick="userdataoption(1)"><strong>{lang post_autosave_restore}</strong></a>
 	</div>
