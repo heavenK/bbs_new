@@ -6,7 +6,7 @@ require '../source/class/class_core.php';
 require '../source/function/function_forum.php';
 
 C::app()->init();
-
+exit;
 $sql = 'SELECT uid,username FROM '.DB::table('common_member').' WHERE extgroupids=22';
 
 $query = DB::query($sql);
