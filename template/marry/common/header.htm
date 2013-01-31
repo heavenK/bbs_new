@@ -1,0 +1,203 @@
+<!--{if $_GET['mod'] == 'spacecp'}-->
+	<!--{subtemplate home/space_header}-->
+	<!--{if $_G['basescript'] == 'forum' && $_G['setting']['archiver']}-->
+		<link rel="archives" title="$_G['setting']['bbname']" href="{$_G[siteurl]}archiver/" />
+	<!--{/if}-->
+	<!--{if !empty($rsshead)}-->$rsshead<!--{/if}-->
+	<!--{if widthauto()}-->
+		<link rel="stylesheet" id="css_widthauto" type="text/css" href="data/cache/style_{STYLEID}_widthauto.css?{VERHASH}" />
+		<script type="text/javascript">HTMLNODE.className += ' widthauto'</script>
+	<!--{/if}-->
+	<!--{if $_G['basescript'] == 'forum' || $_G['basescript'] == 'group'}-->
+		<script type="text/javascript" src="{$_G[setting][jspath]}forum.js?{VERHASH}"></script>
+	<!--{elseif $_G['basescript'] == 'home' || $_G['basescript'] == 'userapp'}-->
+		<script type="text/javascript" src="{$_G[setting][jspath]}home.js?{VERHASH}"></script>
+	<!--{elseif $_G['basescript'] == 'portal'}-->
+		<script type="text/javascript" src="{$_G[setting][jspath]}portal.js?{VERHASH}"></script>
+	<!--{/if}-->
+	<!--{if $_G['basescript'] != 'portal' && $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->
+		<script type="text/javascript" src="{$_G[setting][jspath]}portal.js?{VERHASH}"></script>
+	<!--{/if}-->
+	<!--{if $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->
+	<link rel="stylesheet" type="text/css" id="diy_common" href="data/cache/style_{STYLEID}_css_diy.css?{VERHASH}" />
+	<!--{/if}-->
+    <script type="text/javascript" src="{$_G[setting][jspath]}logging.js?{VERHASH}"></script>
+    <script src="template/we54/js/logging.js" type="text/javascript"></script>
+	<script src="template/we54/js/jquery-1.4.2.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	var jq = jQuery.noConflict(); 
+    jq(document).ready(function(){
+      
+      jq("#ss, #show").hover(function(){
+      jq(".main_nav").show();
+      },function (){jq(".main_nav").hide();});
+    
+    });
+    </script>
+	
+    <script type="text/javascript">
+	var jq = jQuery.noConflict();
+	jq(document).ready(function(){
+	  
+	  jq("#bk, #ycbk").hover(function(){
+	  jq(".nav_three").show();
+	  },function (){jq(".nav_three").hide();});
+	
+	});
+	</script>
+	
+    <script language="javascript">
+	jq(function(){
+	  //当鼠标滑入时将div的class换成divOver
+	  jq('.nav').hover(function(){
+		jq(this).addClass('divOver');  
+	   },function(){
+		//鼠标离开时移除divOver样式
+		jq(this).removeClass('divOver'); 
+	   }
+	  );
+	});
+	</script> 
+    
+    <script language="javascript">
+	jq(function(){
+	  //当鼠标滑入时将div的class换成divOver
+	  jq('.bankuai').hover(function(){
+		jq(this).addClass('bankuaiOver');  
+	   },function(){
+		//鼠标离开时移除divOver样式
+		jq(this).removeClass('bankuaiOver'); 
+	   }
+	  );
+	});
+	</script> 
+    <link href="template/we54/common/header.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="template/we54/common/kaiser.css" />
+<!--{else}-->
+	<!--{subtemplate common/we54_header}-->
+				<div class="ks_marry_logo"></div>
+                <div class="top_ad_01">
+                    <!--{ad/custom_11}-->
+                </div> 
+                
+                <div class="top_ad">
+                    <div class="top_ad_02"><!--{ad/custom_12}--></div>	
+                    <div class="top_ad_03"><!--{ad/custom_13}--></div>
+                    <div class="top_ad_04"><!--{ad/custom_14}--></div>
+                </div>
+                
+                <div class="nav_st">
+                    <div class="nav_second">
+                        
+                        
+                            <div class="nav_three" id="ycbk"><!--三级导航-->
+                                
+                                <ul>
+                                    <li><a href="/forum-743-1.html" style="color:#ff6600">大连你好</a></li>
+                                    <li><a href="/forum-900-1.html" style="color:#ff6600">不惜泡吧</a></li>
+                                    <li><a href="/forum-903-1.html">大连之恋 </a></li>
+                                    <li><a href="/forum-747-1.html" style="color:#ff6600">纯粹女人</a></li>
+                                    <li><a href="/forum-1000-1.html" style="color:#ff6600">婚纱写真</a></li>
+                                    <li><a href="/forum-940-1.html">非常夜店</a></li>
+                                    <li><a href="/forum-964-1.html">君子爱财</a></li>
+                                    <li><a href="/forum-970-1.html">乐动大连</a></li>
+                                    <li><a href="/forum-909-1.html">买房卖房</a></li>
+                                    <li><a href="/forum-791-1.html">新青年车友会</a></li>
+                                    <li><a href="/forum-269-1.html" style="color:#ff6600">偶秀偶拍</a></li>
+                                    <li><a href="/forum-929-1.html">败家报告</a></li>
+                                    <li><a href="/forum-974-1.html">妈 妈 团</a></li>
+                                    <li><a href="/forum-959-1.html">时光影院</a></li>
+                                    <li><a href="http://news.we54.com/a/hdzt/yjhd/index.html">五四宜家人</a></li>
+                                    <li><a href="/forum-992-1.html">法律咨询</a></li>
+                                    <li><a href="/forum-931-1.html" style="color:#ff6600">饭统大连</a></li>
+                                    <li><a href="/forum-966-1.html">人在旅途</a></li>
+                                    <li><a href="/forum-898-1.html">欢乐时光</a></li>
+                                    <li><a href="/forum-941-1.html">两性咨询</a></li>
+                                    <li><a href="/forum-968-1.html">教育培训</a></li>
+                                    <li><a href="/forum-962-1.html">体坛风云</a></li>
+                                    <li><a href="/forum-705-1.html" style="color:#ff6600">淘宝大连街</a></li>
+                                    <li><a href="/forum-973-1.html">官方版务</a></li>
+                                </ul>
+                            </div> 
+                        
+                        
+                    	<div class="nav_nav">
+                    		<li <!--{if empty($_G['forum']['name'])}-->style=" background:url(/template/we54/images/size_bg.jpg) repeat-x;"<!--{/if}-->><a href="./">首页</a></li>
+                            <!--{loop $_G['cache']['forums'] $bforum}-->
+                                <!--{if $bforum['fup'] == $_G['forum']['fup'] && $bforum['status']}-->
+                                    <li <!--{if $_G['forum']['name'] == $bforum['name']}-->style=" background:url(/template/we54/images/size_bg.jpg) repeat-x;"<!--{/if}-->><a href="forum.php?mod=forumdisplay&fid=$bforum[fid]">$bforum['name']</a></li>
+                                <!--{/if}-->
+                            <!--{/loop}-->
+                        </div>
+                        <!--{if $_G['setting']['search']}-->
+                        <form id="scbar_form" method="{if $_G[fid] && !empty($searchparams[url])}get{else}post{/if}" autocomplete="off" onSubmit="searchFocus($('scbar_txt'))" action="{if $_G[fid] && !empty($searchparams[url])}$searchparams[url]{else}search.php?searchsubmit=yes{/if}" target="_blank">
+                            <input type="hidden" name="mod" id="scbar_mod" value="forum" />
+                            <input type="hidden" name="formhash" value="{FORMHASH}" />
+                            <input type="hidden" name="srchtype" value="title" />
+                            <input type="hidden" name="srhfid" value="$_G[fid]" />
+                            <input type="hidden" name="srhlocality" value="$_G['basescript']::{CURMODULE}" />
+                            <!--{if !empty($searchparams[params])}-->
+                                <!--{loop $searchparams[params] $key $value}-->
+                                <!--{eval $srchotquery .= '&' . $key . '=' . rawurlencode($value);}-->
+                                <input type="hidden" name="$key" value="$value" />
+                                <!--{/loop}-->
+                                <input type="hidden" name="source" value="discuz" />
+                                <input type="hidden" name="fId" id="srchFId" value="$_G[fid]" />
+                                <input type="hidden" name="q" id="cloudsearchquery" value="" />
+                            <!--{/if}-->
+                    
+                            <input style="border:none;" type="text" name="srchtxt" id="scbar_txt" value="{lang enter_content}" onFocus="if (value =='{lang enter_content}'){value =''}" onBlur="if (value ==''){value='{lang enter_content}'}" class="ggg" autocomplete="off" x-webkit-speech speech />
+                            <button style="border:none;" type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="aaa" value="true"></button>
+                        </form>
+                        <!--{/if}-->
+                    </div>
+                
+                    
+                </div>
+                
+                <div class="top_ad_05">
+                    <!--{ad/custom_15}-->
+                </div>
+                
+			</div>
+		</div>
+
+		<!--{if !IS_ROBOT}-->
+			<!--{if $_G['uid'] && !empty($_G['style']['extstyle'])}-->
+				<div id="sslct_menu" class="cl p_pop" style="display: none;">
+					<!--{if !$_G[style][defaultextstyle]}--><span class="sslct_btn" onClick="extstyle('')" title="{lang default}"><i></i></span><!--{/if}-->
+					<!--{loop $_G['style']['extstyle'] $extstyle}-->
+						<span class="sslct_btn" onClick="extstyle('$extstyle[0]')" title="$extstyle[1]"><i style='background:$extstyle[2]'></i></span>
+					<!--{/loop}-->
+				</div>
+			<!--{/if}-->
+
+				<div id="qmenu_menu" class="p_pop {if !$_G['uid']}blk{/if}" style="display: none;">
+					<!--{if $_G['uid']}-->
+					<ul>
+						<!--{loop $_G['setting']['mynavs'] $nav}-->
+							<!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->
+								<li>$nav[code]</li>
+							<!--{/if}-->
+						<!--{/loop}-->
+					</ul>
+					<!--{elseif $_G[connectguest]}-->
+						<div class="ptm pbw hm">
+							{lang connect_fill_profile_to_visit}
+						</div>
+					<!--{else}-->
+						<div class="ptm pbw hm">
+							{lang my_nav_login}
+						</div>
+					<!--{/if}-->
+				</div>
+		<!--{/if}-->
+
+		
+
+		<!--{hook/global_header}-->
+	<!--{/if}-->
+
+	<div id="wp" class="wp">
+<!--{/if}-->
