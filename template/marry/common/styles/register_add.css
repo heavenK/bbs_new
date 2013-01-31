@@ -1,0 +1,41 @@
+@charset "gb2312";
+/* CSS Document */
+label							{cursor:auto;}
+.login_header em				{padding:0;}
+/*×¢²á*/
+.z_tip							{z-index:2;padding-left:10px;width:390px;background:#FFF;color:#b2b2b2;font-style:normal;font-size:14px;float:left;}
+.register						{background:url(../images/bg.jpg) white no-repeat bottom center;_height:850px !important;}
+.register tt					{color:red;margin-right:6px;}
+.register dl dt.tipwide			{height:auto;padding:10px 2px;line-height:24px;}
+.register dl dt em.p_notice		{ width:352px;height:34px;}
+.register dl dt em i			{ margin:0 0 0 8px; display:inline; line-height:13px; float:left;}
+.register dl dd em.p_notice		{ width:352px;height:34px;}
+.register b.sechash_tip			{color:#b2b2b2;font-style:normal;font-size:14px;font-weight:normal;width:auto;height:auto;padding:5px 0 0 0;}
+.register b						{margin-bottom:140px;_margin-bottom:1340px;}
+.p_chk							{z-index:1;padding:4px 6px 0 10px;width:390px;color:red;font-weight:700;font-size:14px;font-family: "Î¢ÈíÑÅºÚ", "ºÚÌå";float:left;}
+.s_k							{margin-left:4px;}
+.p_chk img						{margin:4px 4px 0 6px;float:left;}
+.p_chk span						{margin:0;}
+.register dl dt img				{margin:4px 4px 0 6px;float:left;}
+.p_right						{background:url(../images/register_yes.png) no-repeat 10px 12px;width:30px;}
+#emailmore						{margin-left:135px;}
+.register dd.email_msg			{width:380px; height:30px; padding:0;margin-top:30px;}
+.register dd.email_msg em.e_n	{margin-left:14px;float:left;}
+.register dt.email_show			{width:398px; position:relative;}
+.register dd.seccode_show		{height:auto;}
+.register dd.seccode_show span	{width:auto;height:auto;}
+.register dt.seccodet_show a	{margin:8px 0 0 10px;float:left;}
+.register dt.seccodet_show span	{width:auto;margin:4px 0 0 0;}
+.xiz							{margin-top:84px;float:left;}
+.register span.curl{margin:60px 50px 0 0;}
+#main_succeed					{background-color:white;padding:60px 0 0 460px;}
+#main_succeed .f_c				{margin:0;}
+
+.register span.ruleshow			{width: 715px;height: 32px;padding: 0 0 0 275px;overflow: hidden;float: left;}
+.register span.ruleshow a		{color:#369;}
+/*qqÏà¹Ø*/
+.qq_st							{background-color:white;}
+.qq_st input					{width:252px; height:14px; padding:7px 3px; background:#FFF; border:1px solid #c4c4c4; font-size:12px; overflow:hidden; float:left;}
+.qq_st th						{ width:129px; height:26px; padding:12px 6px 0 0; text-align:right; font-size:14px; overflow:hidden; float:left;}
+.qq_st .qq_slct					{ padding:7px 3px; background:#FFF; border:1px solid #c4c4c4; font-size:12px; overflow:hidden; }
+.qq_st .ppc						{width:auto;height:auto;padding:0;float:none;}
