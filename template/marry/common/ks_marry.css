@@ -1,0 +1,8 @@
+@charset "gb2312";
+/* CSS Document */
+
+/*整体*/
+body{ background:url(/template/marry/images/ks_marry_list_bg.png) repeat-x;}
+
+/*头部*/
+.ks_marry_logo		{ width:211px; height:71px; background-image:url(/template/marry/images/ks_marry_logo.png)!important; background-repeat:no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/template/marry/images/ks_marry_logo.png'); _background-image:none; overflow:hidden; float:left;}
