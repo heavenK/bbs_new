@@ -214,7 +214,7 @@
 .miyue_pic li 		 { width:175px; height:300px; overflow:hidden; float:left; margin:0 3px 0 0; display:inline;}
 
 /*底部*/
-.footer			   { width:100%; background:#fff; height:219px; border-top:1px solid #fedbdb; margin-top:30px; display:inline; text-align:center; color:#FFFFFF; overflow:hidden; float:left; }
+.footer			   { width:100%; height:221px; background:url(../images/bottom_bg.gif) repeat-x; margin-top:30px; display:inline; text-align:center; color:#FFFFFF; overflow:hidden; float:left; }
 .end 			   { width:1000px; height:219px; margin:0 auto;}
 .end_xinxi 		   { width:820px; height:45px; overflow:hidden; float:left; margin:24px 0 0 155px; display:inline;}
 .end_logo 		   { width:137px; height:45px; overflow:hidden; float:left; border-right:1px solid #cccccc; margin-right:19px; display:inlin e;}
@@ -223,9 +223,19 @@
 .end_xinxi dl dd   { width:545px; height:18px; margin-top:4px; display:inline; margin-bottom:8px; overflow:hidden; float:left;}
 .end_xinxi dl dd a { color:#666666;}
 .end_xinxi dl dt   { width:545px; height:18px; overflow:hidden; float:left; }
-.wangjing 		   { width:383px; height:43px; overflow:hidden; float:left; margin:21px 0 0 312px; display:inline;}
+.wangjing 		   { width:409px; height:60px; overflow:hidden; float:left; margin:21px 0 0 304px; display:inline;}
 
-
+*html{background: url(../images/bg_x.gif) center;background-attachment:fixed;}/*解决IE6下滚动抖动的问题*/
+#tbox{width:50px; float:right; position:fixed;
+_position:absolute;
+_bottom:auto;
+_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+_margin-bottom:10px;
+}/*解决IE6下不兼容 position:fixed 的问题*/
+#jianyi{ width:24px; height:39px; background-color:#FFFFFF; line-height:16px; color:#8c8c8c; padding:11px 13px 0 14px; margin-top:5px; display:inline; float:left; cursor:pointer; overflow:hidden;}
+#gotop{ width:50px; height:50px; background:url(../images/top01.png) no-repeat; position:absolute; top:-50px; left:0; display:none; cursor:pointer; float:left; overflow:hidden;} 
+#jianyi:hover{ background-color:#f05960; color:#FFFFFF; text-decoration:none;}
+#gotop:hover{ background:url(../images/top02.jpg) no-repeat;}
 
 
 

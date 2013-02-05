@@ -1,33 +1,5 @@
-<!--{subtemplate common/header}-->
-
-
-
-<div id="pt" class="bm cl">
-	<!--{if empty($gid) && $announcements}-->
-	<div class="y">
-		<div id="an">
-			<dl class="cl">
-				<dt class="z xw1">{lang announcements}:&nbsp;</dt>
-				<dd>
-					<div id="anc"><ul id="ancl">$announcements</ul></div>
-				</dd>
-			</dl>
-		</div>
-		<script type="text/javascript">announcement();</script>
-	</div>
-	<!--{/if}-->
-	<div class="z">
-		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php"{if $_G['setting']['forumjump']} id="fjump" onmouseover="delayShow(this, 'showForummenu($_G[fid])');" class="showmenu"{/if}>{$_G[setting][navs][2][navname]}</a>$navigation
-	</div>
-	<div class="z"><!--{hook/index_status_extra}--></div>
-</div>
-
-
-<!--{if empty($gid)}-->
-	<!--{ad/text/wp a_t}-->
-<!--{/if}-->
-
-	<style id="diy_style" type="text/css"></style>
+<!--{subtemplate common/header_marry}-->
+<style id="diy_style" type="text/css"></style>
 
 <!--{if empty($gid)}-->
 	<div class="wp">
