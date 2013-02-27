@@ -5,4 +5,5 @@
 body{ background:url(/template/marry/images/ks_marry_list_bg.png) repeat-x;}
 
 /*Í·²¿*/
-.ks_marry_logo		{ width:211px; height:71px; background-image:url(/template/marry/images/ks_marry_logo.png)!important; background-repeat:no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/template/marry/images/ks_marry_logo.png'); _background-image:none; overflow:hidden; float:left;}
+.ks_marry_list_header					{ width:1000px; height:105px; overflow:hidden; float:left;}
+.ks_marry_logo							{ width:211px; height:71px; margin:18px 0 0 36px; display:inline; background-image:url(/template/marry/images/ks_marry_logo.png)!important; background-repeat:no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/template/marry/images/ks_marry_logo.png'); _background-image:none; overflow:hidden; float:left;}
