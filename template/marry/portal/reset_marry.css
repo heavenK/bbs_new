@@ -20,10 +20,10 @@ h3,h4		{ font-size:12px;}
 .rukou_nav	 { width:457px; height:184px;  display:none; background:#fff; border:1px solid #cdcdcd; position:absolute; top:25px; left:0; float:left; overflow:hidden; }
 .rukouOver a{ width:50px; height:26px; background: url(/template/marry/images_marry/ru_top02.jpg) no-repeat;  position:absolute; top:0; left:0;}
 .rukou_nav ul { width:457px; height:168px; margin-top:8px; font-size:14px; overflow:hidden; float:left;}
-.rukou_nav ul li { width:92px; height:20px; overflow:hidden; float:left; border-left:1px solid #d7d7d7; margin-left:-1px; padding:8px 0 0 22px;}
+.rukou_nav ul li { width:92px; height:20px; overflow:hidden; float:left; border-left:1px solid #d7d7d7; margin-left:-1px; padding:8px 0 0 22px; line-height:14px;}
 .rukou_nav ul li a { color:#666;}
 .rukou_nav ul li a:hover { color:#FF0000;}
-.qita { overflow:hidden; float:left; position:absolute; top:0; left:50px;}
+.qita { overflow:hidden; float:left; position:absolute; top:0; left:50px; width:400px;}
 .tiaoti { margin:0 20px 0 5px; display:inline; overflow:hidden; float:left; color:#666666; line-height:28px;}
 .sousuo { width:156px; height:17px; overflow:hidden; float:left; border:1px solid #cdcdcd; color:#999999; margin:2px 0 0 29px; display:inline; padding:2px 0 0 3px;}
 .btn { width:29px; height:21px; background: url(/template/marry/images_marry/btn.jpg) no-repeat; overflow:hidden; float:left; margin-top:2px; display:inline; cursor:pointer;}
