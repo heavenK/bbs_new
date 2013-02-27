@@ -2,8 +2,29 @@
 /* CSS Document */
 
 /*整体*/
-body{ background:url(/template/marry/images/ks_marry_list_bg.png) repeat-x;}
+body{ background:#FFF url(/template/marry/images/ks_marry_list_bg.png) repeat-x;}
 
 /*头部*/
 .ks_marry_list_header					{ width:1000px; height:105px; overflow:hidden; float:left;}
 .ks_marry_logo							{ width:211px; height:71px; margin:18px 0 0 36px; display:inline; background-image:url(/template/marry/images/ks_marry_logo.png)!important; background-repeat:no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/template/marry/images/ks_marry_logo.png'); _background-image:none; overflow:hidden; float:left;}
+.ks_marry_top_ad_01						{ width:700px; height:60px; margin:23px 1px 0 0; display:inline; overflow:hidden; float:right;}
+.ks_marry_top_ad_01 img					{ width:700px; height:60px;}
+.nav_st 								{ width:1000px; height:140px; position:relative; float:left; _float:none; z-index:999; }
+.nav_second 							{ width:976px; height:52px; padding:0 100px; background:url(/template/marry/images/ks_marry_list_mainbav_bg.png) no-repeat; position:absolute; left:-88px; overflow:hidden;}
+.nav_nav 								{ width:720px; height:52px; line-height:39px; font-size:18px; font-family:"微软雅黑","黑体"; margin-left:12px; display:inline; overflow:hidden; float:left;}	
+.nav_nav li 							{ height:52px; padding:0 15px 0 15px;text-align:center; list-style-type:none; overflow:hidden; float:left;}
+.nav_nav li a 							{ height:52px; color:#FFF;}
+.nav_nav li a:hover 					{ text-decoration:none;}
+.nav_nav li:hover 						{ height:52px; text-decoration:none; background:url(/template/marry/images/size_bg.jpg) repeat-x !important; overflow:hidden; float:left;}
+.ks_nav_nav_tel							{ width:200px; height:52px; font-family:"微软雅黑","黑体"; font-size:18px; color:#FFF; line-height:39px; overflow:hidden; float:right;}
+.ks_nav_three							{ width:1000px; height:90px; position:absolute; top:50px; overflow:hidden;}
+.ks_nav_three img						{ width:1000px; height:90px;}
+
+/*列表页*/
+.ks_marry_boardnav						{ margin-top:26px;}
+.ks_marry_list_leftbav					{ width:200px; padding:0 0 22px 0; text-align:center; overflow:hidden; float:left;}
+.ks_marry_list_leftbav em				{ width:200px; height:22px; padding:8px 0 12px 0; font-size:20px; color:#000; overflow:hidden; float:left;}
+.ks_marry_list_leftbav i				{ width:200px; height:128px; overflow:hidden; float:left;}
+.kaiser_marry_banzhu_a					{ width:182px; padding:0 0 0 18px; overflow:hidden; float:left;}
+.kaiser_marry_banzhu_a em				{ font-size:14px; font-weight:bold; color:#666666; float:left;}
+.kaiser_marry_banzhu_a i				{ font-size:14px; font-weight:bold; color:#333333; float:left;}

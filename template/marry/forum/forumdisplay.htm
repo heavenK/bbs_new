@@ -1,4 +1,4 @@
-<!--{subtemplate common/header}-->
+<!--{subtemplate common/marry_header}-->
 <link rel="stylesheet" type="text/css" href="{$_G[siteurl]}template/we54/common/list_focus.css" />
 <link rel="stylesheet" type="text/css" href="{$_G[siteurl]}template/marry/common/ks_marry.css" />
 <script type="text/javascript" src="{$_G[siteurl]}template/we54/js/jQuery.blockUI.js"></script>
@@ -14,55 +14,29 @@
 		<b>当前位置：</b><a href="http://www.we54.com/" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em> <a href="./"{if $_G['setting']['forumjump']} id="fjump" onmouseover="delayShow(this, 'showForummenu($_G[fid])');" class="showmenu" {/if}>{$_G[setting][navs][2][navname]}</a>$navigation
 	</div>
 </div>
-<div id="pgt" class="bm bw0 pgs cl">
-	<div class="kaiser_new_view"><a href="forum.php?mod=guide&view=new">查看新帖</a></div>
-    <!--[diy=kaiser_diy_a]--><div id="kaiser_diy_a" class="area"></div><!--[/diy]-->
-    <!--{if !$_GET['archiveid']}--><a href="javascript:;" id="newspecial" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})"{if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']} onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=$_G[fid]')"{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=$_G[fid]';return false;"{/if} title="{lang send_posts}" class="kaiser_pn_post_btn"></a><!--{/if}-->
-    <!--{hook/forumdisplay_postbutton_top}-->
-</div>
 
 <!--{ad/text/wp a_t}-->
 <div class="wp">
 	<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
 </div>
-<div class="boardnav">
+<div class="boardnav ks_marry_boardnav">
 	<div id="ct" class="wp cl{if $_G['forum']['allowside']} ct2{/if}"{if $leftside} style="margin-left:{$_G['leftsidewidth_mwidth']}px"{/if}>
 		<!--{if $leftside}-->
-			<div id="sd_bdl" class="bdl" onmouseover="showMenu({'ctrlid':this.id, 'pos':'dz'});" style="width:{$_G['setting']['leftsidewidth']}px;margin-left:-{$_G['leftsidewidth_mwidth']}px; border:none; background:none;">
+			<div id="sd_bdl" class="bdl" onmouseover="showMenu({'ctrlid':this.id, 'pos':'dz'});" style="width:{$_G['setting']['leftsidewidth']}px;margin-left:-{$_G['leftsidewidth_mwidth']}px; border:1px solid #ececec; background:#f4f4f4;">
 				<!--[diy=diyleftsidetop]--><div id="diyleftsidetop" class="area"></div><!--[/diy]-->
-				<div class="kaiser_list_leftbav">
-                    <em>
-                        <!--{loop $_G['cache']['forums'] $bforum}-->
-                            <!--{if $bforum['fup'] == $_G['forum']['fup'] && $bforum['status']}-->
-                                <a href="forum.php?mod=forumdisplay&fid=$bforum[fid]" class="{if $_G['forum']['name'] == $bforum['name']}kaiser_list_leftbav_on{else}kaiser_list_leftbav_out{/if}">$bforum['name']</a>
-                            <!--{/if}-->
-                        <!--{/loop}-->
-                    </em>
-                    
+				<div class="ks_marry_list_leftbav">
+                    <em>$_G['forum']['name']</em>
+                    <i><img src="/$_G['forum']['banner']" width="128" height="128" /></i>
                 </div>
-				<div class="kaiser_banzhu">
-                    <div class="kaiser_banzhu_box">
-                    	<!--{if $_G['forum']['moderators']}-->
-                        <div class="kaiser_banzhu_t">本版版主</div>
-                        <div class="leftLoop">
-                            <div class="hd">
-                                <a class="next"></a>
-                                <a class="prev"></a>
-                            </div>
-                            <div class="bd">
-                                <ul class="picList">
-                                    $kaiser_banzhu
-                                </ul>
-                            </div>
-                        </div>
-                        <script type="text/javascript">jQuery(".leftLoop").slide({ mainCell:".bd ul",effect:"leftLoop",vis:1,scroll:1,autoPlay:false});</script>
-                        <!--{/if}-->
-                        <div class="kaiser_banzhu_b">本版人气指数</div>
-                        <div class="kaiser_banzhu_n">
-                        	<div class="kaiser_banzhu_n_a">帖子数<br /><em>$_G[forum][threads]</em></div>
-                            <div class="kaiser_banzhu_n_b">24时新帖<br /><em>$_G[forum][todayposts]</em></div>
-                            <div class="kaiser_banzhu_n_c">在线<br /><em>$onlinenum</em></div>
-                        </div>
+				<div class="ks_marry_list_banzhu">
+                	<div class="kaiser_marry_banzhu_a">
+                    	<em>版主：</em>
+                        <i>$kaiser_marry_banzhu</i>
+                    </div>
+                    <div class="kaiser_banzhu_n">
+                        <div class="kaiser_banzhu_n_a">帖子数<br /><em>$_G[forum][threads]</em></div>
+                        <div class="kaiser_banzhu_n_b">24时新帖<br /><em>$_G[forum][todayposts]</em></div>
+                        <div class="kaiser_banzhu_n_c">在线<br /><em>$onlinenum</em></div>
                     </div>
                 </div>
                 <div class="kaiser_other_a">
