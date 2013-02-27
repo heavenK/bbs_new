@@ -14,8 +14,8 @@ body{ background:#FFF url(/template/marry/images/ks_marry_list_bg.png) repeat-x;
 .nav_nav 								{ width:720px; height:52px; line-height:39px; font-size:18px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; margin-left:12px; display:inline; overflow:hidden; float:left;}	
 .nav_nav li 							{ height:52px; padding:0 15px 0 15px;text-align:center; list-style-type:none; overflow:hidden; float:left;}
 .nav_nav li a 							{ height:52px; color:#FFF;}
-.nav_nav li a:hover 					{ text-decoration:none;}
-.nav_nav li:hover 						{ height:52px; text-decoration:none; background:url(/template/marry/images/size_bg.jpg) repeat-x !important; overflow:hidden; float:left;}
+.nav_nav li a:hover 					{ text-decoration:none; color:#FFEE9D;}
+.nav_nav li:hover 						{ text-decoration:none; background:none; overflow:hidden; float:left;}
 .ks_nav_nav_tel							{ width:200px; height:52px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-size:18px; color:#FFF; line-height:39px; overflow:hidden; float:right;}
 .ks_nav_three							{ width:1000px; height:90px; position:absolute; top:50px; overflow:hidden;}
 .ks_nav_three img						{ width:1000px; height:90px;}
