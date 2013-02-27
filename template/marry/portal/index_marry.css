@@ -14,13 +14,13 @@
 .zhubao dl dt a,
 .miyue dl dd,
 .miyue dl dt a    
-{ background:url(../images/all.jpg) no-repeat;}
+{ background:url(/template/marry/images_marry/all.jpg) no-repeat;}
 
 
 
 .box      { width:1000px; margin:0 auto;}
 
-.main_nav { width:977px; height:29px; position:relative; padding:11px 0 0 23px; float:left;  background: url(../images/nav_bg.gif) repeat-x; font-size:18px; font-weight:400; font-family:"Microsoft YaHei","黑体","宋体";}
+.main_nav { width:977px; height:29px; position:relative; padding:11px 0 0 23px; float:left;  background: url(/template/marry/images_marry/nav_bg.gif) repeat-x; font-size:18px; font-weight:400; font-family:"Microsoft YaHei","黑体","宋体";}
 .main_nav a       { color:#fff; margin-right:20px; display:inline; overflow:hidden; float:left;}
 .main_nav a:hover { color:#FFEE9D; text-decoration:none;}
 .main_nav span    { overflow:hidden; float:right; color:#FFFFFF; margin-right:33px; display:inline;}
@@ -44,7 +44,7 @@
 #bd1lfimg div	  {width:100000px; margin-left:-4px;}
 #bd1lfimg dl	  {width:300px; height:400px; position:relative; overflow:hidden; float:left;}
 #bd1lfimg dt	  {width:300px; height:400px; position:absolute; left:0px; top:0px;}
-#bd1lfimg dd	  {width:290px; height:40px; ;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop"); position:absolute; left:0px; bottom:0px; padding:0 0 0 10px;}
+#bd1lfimg dd	  {width:290px; height:40px; ;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop"); position:absolute; left:0px; bottom:0px; padding:0 0 0 10px;}
 #bd1lfimg dd h2	  {height:25px; padding:8px 0 4px 0; line-height:25px; overflow:hidden;}
 #bd1lfimg dd h2 a {font-size:16px;  color:#ffffff; font-family:"Microsoft YaHei","黑体","宋体";}
 #bd1lfimg dd a    {color:#ffffff; text-decoration:none;}
@@ -73,7 +73,7 @@
 
 /*婚礼日记*/
 .riji 				{ width:1000px; height:446px; overflow:hidden; float:left; background-color:#FFFFFF; margin-top:20px; display:inline;}
-.riji dl 			{ width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:20px; display:inline; background: url(../images/line_bg.jpg) repeat-x;}
+.riji dl 			{ width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:20px; display:inline; background: url(/template/marry/images_marry/line_bg.jpg) repeat-x;}
 .riji dl dd 		{ width:271px; height:63px; overflow:hidden; float:left; background-position:0 0;}
 .riji dl dt a 		{ width:70px; height:20px; overflow:hidden; float:right; margin:23px 18px 0 0; display:inline; background-position:-271px 0;}
 .riji dl dt a:hover { background-position:-271px -20px;}
@@ -84,32 +84,32 @@
 .baibao 		  { width:1000px; height:190px;  float:left; margin-top:20px; display:inline; background-color:#FFFFFF; position:relative; }
 .baibao dl 		  { width:1000px; height:53px; overflow:hidden; float:left; }
 .baibao dl dd 	  { width:279px; height:53px; overflow:hidden; float:left; background-position:0 -63px;}
-.hengtiao 		  { width:1000px; height:120px; overflow:hidden; float:left; background: url(../images/hengtiao.jpg) no-repeat;}
+.hengtiao 		  { width:1000px; height:120px; overflow:hidden; float:left; background: url(/template/marry/images_marry/hengtiao.jpg) no-repeat;}
 .baibao_left 	  { width:5px; height:140px; overflow:hidden; float:left; position:absolute; top:43px; left:-5px; z-index:99999;}
 .baibao_right 	  { width:5px; height:140px; overflow:hidden; float:right; position:absolute; top:43px; right:-5px;}
 .hengtiao ul 	  { width:970px; height:100px; overflow:hidden; float:left; margin:10px 0 0 27px; display:inline;}
 .hengtiao ul li   { width:120px; height:100px; overflow:hidden; float:left;}
-.btn_01 a 		  { width:100px; height:100px; background: url(../images/01.gif) no-repeat; overflow:hidden; float:left;}
-.btn_01 a:hover   { background: url(../images/01_h.gif) no-repeat;}
-.hengtiao ul li b { width:11px; height:29px; background: url(../images/you.gif) no-repeat; overflow:hidden; float:left; margin:36px 0 0 5px; display:inline;}
-.btn_02 a		  { width:100px; height:100px; background: url(../images/02.gif) no-repeat; overflow:hidden; float:left;}
-.btn_02 a:hover   { background: url(../images/02_h.gif) no-repeat;}
-.btn_03 a 		  { width:100px; height:100px; background: url(../images/03.gif) no-repeat; overflow:hidden; float:left;}
-.btn_03 a:hover   { background: url(../images/03_h.gif) no-repeat;}
-.btn_04 a 		  { width:100px; height:100px; background: url(../images/04.gif) no-repeat; overflow:hidden; float:left;}
-.btn_04 a:hover   { background: url(../images/04_h.gif) no-repeat;}
-.btn_05 a 		  { width:100px; height:100px; background: url(../images/05.gif) no-repeat; overflow:hidden; float:left;}
-.btn_05 a:hover   { background: url(../images/05_h.gif) no-repeat;}
-.btn_06 a 		  { width:100px; height:100px; background: url(../images/06.gif) no-repeat; overflow:hidden; float:left;}
-.btn_06 a:hover   { background: url(../images/06_h.gif) no-repeat;}
-.btn_07 a 		  { width:100px; height:100px; background: url(../images/07.gif) no-repeat; overflow:hidden; float:left;}
-.btn_07 a:hover   { background: url(../images/07_h.gif) no-repeat;}
-.btn_08 a 		  { width:100px; height:100px; background: url(../images/08.gif) no-repeat; overflow:hidden; float:left;}
-.btn_08 a:hover   { background: url(../images/08_h.gif) no-repeat;}
+.btn_01 a 		  { width:100px; height:100px; background: url(/template/marry/images_marry/01.gif) no-repeat; overflow:hidden; float:left;}
+.btn_01 a:hover   { background: url(/template/marry/images_marry/01_h.gif) no-repeat;}
+.hengtiao ul li b { width:11px; height:29px; background: url(/template/marry/images_marry/you.gif) no-repeat; overflow:hidden; float:left; margin:36px 0 0 5px; display:inline;}
+.btn_02 a		  { width:100px; height:100px; background: url(/template/marry/images_marry/02.gif) no-repeat; overflow:hidden; float:left;}
+.btn_02 a:hover   { background: url(/template/marry/images_marry/02_h.gif) no-repeat;}
+.btn_03 a 		  { width:100px; height:100px; background: url(/template/marry/images_marry/03.gif) no-repeat; overflow:hidden; float:left;}
+.btn_03 a:hover   { background: url(/template/marry/images_marry/03_h.gif) no-repeat;}
+.btn_04 a 		  { width:100px; height:100px; background: url(/template/marry/images_marry/04.gif) no-repeat; overflow:hidden; float:left;}
+.btn_04 a:hover   { background: url(/template/marry/images_marry/04_h.gif) no-repeat;}
+.btn_05 a 		  { width:100px; height:100px; background: url(/template/marry/images_marry/05.gif) no-repeat; overflow:hidden; float:left;}
+.btn_05 a:hover   { background: url(/template/marry/images_marry/05_h.gif) no-repeat;}
+.btn_06 a 		  { width:100px; height:100px; background: url(/template/marry/images_marry/06.gif) no-repeat; overflow:hidden; float:left;}
+.btn_06 a:hover   { background: url(/template/marry/images_marry/06_h.gif) no-repeat;}
+.btn_07 a 		  { width:100px; height:100px; background: url(/template/marry/images_marry/07.gif) no-repeat; overflow:hidden; float:left;}
+.btn_07 a:hover   { background: url(/template/marry/images_marry/07_h.gif) no-repeat;}
+.btn_08 a 		  { width:100px; height:100px; background: url(/template/marry/images_marry/08.gif) no-repeat; overflow:hidden; float:left;}
+.btn_08 a:hover   { background: url(/template/marry/images_marry/08_h.gif) no-repeat;}
 
 /*喜宴酒店*/
 .hotel 				 { width:1000px; height:426px; float:left; margin-top:20px; display:inline; background-color:#FFFFFF;}
-.hotel dl 			 { width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:10px; display:inline; background: url(../images/line_bg.jpg) repeat-x;}
+.hotel dl 			 { width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:10px; display:inline; background: url(/template/marry/images_marry/line_bg.jpg) repeat-x;}
 .hotel dl dd 		 { width:274px; height:63px; overflow:hidden; float:left; background-position:0 -116px;}
 .hotel dl dt a 		 { width:70px; height:20px; overflow:hidden; float:right; margin:23px 18px 0 0; display:inline; background-position:-271px 0;}
 .hotel dl dt a:hover { background-position:-271px -20px;}
@@ -141,7 +141,7 @@
 
 /*婚纱摄影*/
 .photo 			     { width:1000px; height:400px; float:left; margin-top:20px; display:inline; background-color:#FFFFFF;}
-.photo dl 			 { width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:10px; display:inline; background: url(../images/line_bg.jpg) repeat-x;}
+.photo dl 			 { width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:10px; display:inline; background: url(/template/marry/images_marry/line_bg.jpg) repeat-x;}
 .photo dl dd 		 { width:327px; height:63px; overflow:hidden; float:left; background-position:0 -179px;}
 .photo dl dt a 		 { width:70px; height:20px; overflow:hidden; float:right; margin:23px 18px 0 0; display:inline; background-position:-271px 0;}
 .photo dl dt a:hover { background-position:-271px -20px;}
@@ -151,7 +151,7 @@
 
 /*婚礼服务*/
 .fuwu 				 { width:1000px; height:400px; float:left; margin-top:20px; display:inline; background-color:#FFFFFF;}
-.fuwu dl 			 { width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:10px; display:inline; background: url(../images/line_bg.jpg) repeat-x;}
+.fuwu dl 			 { width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:10px; display:inline; background: url(/template/marry/images_marry/line_bg.jpg) repeat-x;}
 .fuwu dl dd 		 { width:272px; height:63px; overflow:hidden; float:left; background-position:0 -241px;}
 .fuwu dl dt a 		 { width:70px; height:20px; overflow:hidden; float:right; margin:23px 18px 0 0; display:inline; background-position:-271px 0;}
 .fuwu dl dt a:hover  { background-position:-271px -20px;}
@@ -160,20 +160,20 @@
 .fuwu_pic span 		 { color:#FFFFFF; font-size:14px; font-weight:400; font-family:"微软雅黑","黑体";}
 .hdp_01_02 			 { width:262px; height:304px; overflow:hidden; float:left; margin-right:4px; display:inline;}
 .hdp_01 			 { width:262px; height:150px; margin-bottom:4px;  display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_01_display 	 { width:262px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0;  left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_01_display 	 { width:262px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0;  left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_02 			 { width:262px; height:150px; display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_02_display 	 { width:262px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_02_display 	 { width:262px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_03 			 { width:178px; height:304px; margin-right:4px; display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_03_display 	 { width:178px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_03_display 	 { width:178px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_04_05 			 { width:262px; height:304px; overflow:hidden; float:left; margin-right:4px; display:inline;}
 .hdp_04 			 { width:262px; height:150px; margin-bottom:4px;  display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_04_display 	 { width:262px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_04_display 	 { width:262px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_05 		 	 { width:262px; height:150px; margin-right:4px; display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_05_display		 { width:262px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_05_display		 { width:262px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 
 /*珠光宝气*/
 .zhubao { width:1000px; height:400px; float:left; margin-top:20px; display:inline; background-color:#FFFFFF;}
-.zhubao dl 			 { width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:10px; display:inline; background: url(../images/line_bg.jpg) repeat-x;}
+.zhubao dl 			 { width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:10px; display:inline; background: url(/template/marry/images_marry/line_bg.jpg) repeat-x;}
 .zhubao dl dd 		 { width:327px; height:63px; overflow:hidden; float:left; background-position:-272px -242px;}
 .zhubao dl dt a 	 { width:70px; height:20px; overflow:hidden; float:right; margin:23px 18px 0 0; display:inline; background-position:-271px 0;}
 .zhubao dl dt a:hover{ background-position:-271px -20px;}
@@ -182,30 +182,30 @@
 .zhubao_pic span 	 { color:#FFFFFF; font-size:14px; font-weight:400; font-family:"微软雅黑","黑体";}
 .hdp_06_09 			 { width:705px; height:174px; overflow:hidden; float:left; margin-bottom:3px; display:inline;}
 .hdp_06 			 { width:174px; height:174px; margin-right:3px;  display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_06_display 	 { width:174px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0;  left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_06_display 	 { width:174px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0;  left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_07 			 { width:174px; height:174px; margin-right:3px; display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_07_display 	 { width:174px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_07_display 	 { width:174px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_08 			 { width:174px; height:174px; margin-right:3px; display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_08_display 	 { width:174px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_08_display 	 { width:174px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_09 			 { width:174px; height:174px; display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_09_display 	 { width:174px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_09_display 	 { width:174px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_10_15 			 { width:705px; height:115px; overflow:hidden; float:left; }
 .hdp_10 			 { width:115px; height:115px; margin-right:3px;  display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_10_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px;  left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_10_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px;  left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_11 			 { width:115px; height:115px; margin-right:3px;  display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_11_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px;  left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_11_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px;  left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_12 			 { width:115px; height:115px; margin-right:3px;  display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_12_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px;  left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_12_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px;  left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_13 			 { width:115px; height:115px; margin-right:3px;  display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_13_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px;  left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_13_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px;  left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_14 			 { width:115px; height:115px; margin-right:3px;  display:inline; position:relative; float:left; overflow:hidden;}	
-.hdp_14_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px;  left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_14_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px;  left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 .hdp_15 			 { width:115px; height:115px; position:relative; float:left; overflow:hidden;}	
-.hdp_15_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px; left:0; overflow:hidden; float:left;background:url(../images/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/shadow.png" ,sizingMethod="crop");}	
+.hdp_15_display 	 { width:115px; height:30px; text-align:center; line-height:32px; display:none; position:absolute; bottom:0; _bottom:-1px; left:0; overflow:hidden; float:left;background:url(/template/marry/images_marry/shadow.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/template/marry/images_marry/shadow.png" ,sizingMethod="crop");}	
 
 /*蜜月旅行*/
 .miyue 			     { width:1000px; height:400px; float:left; margin-top:20px; display:inline; background-color:#FFFFFF;}
-.miyue dl 			 { width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:10px; display:inline; background: url(../images/line_bg.jpg) repeat-x;}
+.miyue dl 			 { width:1000px; height:66px; overflow:hidden; float:left; margin-bottom:10px; display:inline; background: url(/template/marry/images_marry/line_bg.jpg) repeat-x;}
 .miyue dl dd 		 { width:327px; height:63px; overflow:hidden; float:left; background-position:0 -305px;}
 .miyue dl dt a 		 { width:70px; height:20px; overflow:hidden; float:right; margin:23px 18px 0 0; display:inline; background-position:-271px 0;}
 .miyue dl dt a:hover { background-position:-271px -20px;}
@@ -214,7 +214,7 @@
 .miyue_pic li 		 { width:175px; height:300px; overflow:hidden; float:left; margin:0 3px 0 0; display:inline;}
 
 /*底部*/
-.footer			   { width:100%; height:221px; background:url(../images/bottom_bg.gif) repeat-x; margin-top:30px; display:inline; text-align:center; color:#FFFFFF; overflow:hidden; float:left; }
+.footer			   { width:100%; height:221px; background:url(/template/marry/images_marry/bottom_bg.gif) repeat-x; margin-top:30px; display:inline; text-align:center; color:#FFFFFF; overflow:hidden; float:left; }
 .end 			   { width:1000px; height:219px; margin:0 auto;}
 .end_xinxi 		   { width:820px; height:45px; overflow:hidden; float:left; margin:24px 0 0 155px; display:inline;}
 .end_logo 		   { width:137px; height:45px; overflow:hidden; float:left; border-right:1px solid #cccccc; margin-right:19px; display:inlin e;}
@@ -225,7 +225,7 @@
 .end_xinxi dl dt   { width:545px; height:18px; overflow:hidden; float:left; }
 .wangjing 		   { width:409px; height:60px; overflow:hidden; float:left; margin:21px 0 0 304px; display:inline;}
 
-*html{background: url(../images/bg_x.gif) center;background-attachment:fixed;}/*解决IE6下滚动抖动的问题*/
+*html{background: url(/template/marry/images_marry/bg_x.gif) center;background-attachment:fixed;}/*解决IE6下滚动抖动的问题*/
 #tbox{width:50px; float:right; position:fixed;
 _position:absolute;
 _bottom:auto;
@@ -233,9 +233,9 @@ _top:expression(eval(document.documentElement.scrollTop+document.documentElement
 _margin-bottom:10px;
 }/*解决IE6下不兼容 position:fixed 的问题*/
 #jianyi{ width:24px; height:39px; background-color:#FFFFFF; line-height:16px; color:#8c8c8c; padding:11px 13px 0 14px; margin-top:5px; display:inline; float:left; cursor:pointer; overflow:hidden;}
-#gotop{ width:50px; height:50px; background:url(../images/top01.png) no-repeat; position:absolute; top:-50px; left:0; display:none; cursor:pointer; float:left; overflow:hidden;} 
+#gotop{ width:50px; height:50px; background:url(/template/marry/images_marry/top01.png) no-repeat; position:absolute; top:-50px; left:0; display:none; cursor:pointer; float:left; overflow:hidden;} 
 #jianyi:hover{ background-color:#f05960; color:#FFFFFF; text-decoration:none;}
-#gotop:hover{ background:url(../images/top02.jpg) no-repeat;}
+#gotop:hover{ background:url(/template/marry/images_marry/top02.jpg) no-repeat;}
 
 
 
