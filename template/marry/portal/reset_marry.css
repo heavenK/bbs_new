@@ -3,7 +3,7 @@
 
 /*通用样式*/
 *			{ margin:0; padding:0; border:0;}
-body		{ background: url(/template/marry/images_marry/bg_x.gif) center; font-size:12px; font-family:"宋体";}
+body		{ background: url(/template/marry/images_marry/bg_x.gif) center; font-size:12px;}
 ol,ul,li	{ list-style-type:none;}
 a			{ text-decoration:none;}
 a:hover		{ text-decoration:underline;}
