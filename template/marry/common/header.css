@@ -1,7 +1,7 @@
 @charset "gb2312";
 /* CSS Document */
 
-body		{ background:#FFF url(/template/we54/images/header_bg.jpg) repeat-x top; font-family:"Î¢ÈíÑÅºÚ", "ËÎÌå";}
+body		{ background:#FFF url(/template/we54/images/header_bg.jpg) repeat-x top; font-family:"Î¢ÈíÑÅºÚ","ËÎÌå";}
 
 /*kaiser*/
 #toptb #diy-tg_menu{ margin:-2px 0 0 -18px;}
