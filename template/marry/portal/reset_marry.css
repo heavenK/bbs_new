@@ -25,7 +25,7 @@ h3,h4		{ font-size:12px;}
 .rukou_nav ul li a:hover { color:#FF0000;}
 .qita { overflow:hidden; float:left; position:absolute; top:0; left:50px; width:400px;}
 .tiaoti { margin:0 20px 0 5px; display:inline; overflow:hidden; float:left; color:#666666; line-height:28px;}
-.sousuo { width:156px; height:17px; overflow:hidden; float:left; border:1px solid #cdcdcd; color:#999999; margin:2px 0 0 29px; display:inline; padding:2px 0 0 3px;}
+.sousuo { width:156px; height:19px; overflow:hidden; float:left; border:1px solid #cdcdcd; color:#999999; margin:2px 0 0 29px; display:inline; padding:0 0 0 3px; font-size:14px;}
 .btn { width:29px; height:21px; background: url(/template/marry/images_marry/btn.jpg) no-repeat; overflow:hidden; float:left; margin-top:2px; display:inline; cursor:pointer;}
 .login { height:21px; margin-top:2px; line-height:22px; display:inline; overflow:hidden; float:right; color:#999999;}
 .login a { width:35px; height:11px; color:#999999; padding:5px 5px 5px 5px;}
