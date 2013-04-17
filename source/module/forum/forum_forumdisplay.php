@@ -869,7 +869,9 @@ foreach($banzhulist as $val){
 	$banzhunarthor = C::t('common_member_profile')->fetch_all($kaiser_uid);
 	//$kaiser_banzhu .= '<a href="home.php?mod=space&uid='.$kaiser_uid.'" target="_blank">'.$kaiser_avatar.'<p class="caption">'.$banzhunarthor[$kaiser_uid]['field1'].'</p></a>';
 	$kaiser_banzhu .= '<li><div class="pic"><a href="home.php?mod=space&uid='.$kaiser_uid.'" target="_blank">'.$kaiser_avatar.'</a></div><div class="title"><a href="home.php?mod=space&uid='.$kaiser_uid.'">'.$banzhunarthor[$kaiser_uid]['field1'].'</a></div></li>';
+	$kaiser_marry_banzhu .= '<a href="home.php?mod=space&uid='.$kaiser_uid.'">'.$banzhunarthor[$kaiser_uid]['field1'].'</a>,<br />';
 }
+$kaiser_marry_banzhu = substr($kaiser_marry_banzhu,0,strlen($kaiser_marry_banzhu)-7);
 
 if(empty($_GET['k'])){
 	if(empty($_G['cookie']['forumdefstyle'])){

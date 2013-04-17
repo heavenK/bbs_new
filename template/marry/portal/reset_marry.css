@@ -1,0 +1,35 @@
+@charset "gb2312";
+/* CSS Document */
+
+/*通用样式*/
+*			{ margin:0; padding:0; border:0;}
+body		{ background: url(/template/marry/images_marry/bg_x.gif) center; font-size:12px;}
+ol,ul,li	{ list-style-type:none;}
+a			{ text-decoration:none;}
+a:hover		{ text-decoration:underline;}
+i,em		{ font-style:normal;}
+h1,h2		{ font-size:14px;}
+h3,h4		{ font-size:12px;}
+
+
+.header { background: none repeat scroll 0 0 #FFFFFF; height: 25px;}
+.web_top { width:1000px; margin:0 auto; height:25px; _overflow:hidden;}
+.top_logo { width:60px; height:25px; float:left; overflow:hidden;}
+.top_nav { width:432px; height:25px; z-index:9999; margin-left:112px; _margin-left:83px; float:left; position:relative;}
+.rukou a { width:50px; height:25px; z-index:99; background: url(/template/marry/images_marry/ru_top.jpg) no-repeat; float:left;}
+.rukou_nav	 { width:457px; height:184px;  display:none; background:#fff; border:1px solid #cdcdcd; position:absolute; top:25px; left:0; float:left; overflow:hidden; }
+.rukouOver a{ width:50px; height:26px; background: url(/template/marry/images_marry/ru_top02.jpg) no-repeat;  position:absolute; top:0; left:0;}
+.rukou_nav ul { width:457px; height:168px; margin-top:8px; font-size:14px; overflow:hidden; float:left;}
+.rukou_nav ul li { width:92px; height:20px; overflow:hidden; float:left; border-left:1px solid #d7d7d7; margin-left:-1px; padding:8px 0 0 22px; line-height:14px;}
+.rukou_nav ul li a { color:#666;}
+.rukou_nav ul li a:hover { color:#FF0000;}
+.qita { overflow:hidden; float:left; position:absolute; top:0; left:50px; width:400px;}
+.tiaoti { margin:0 20px 0 5px; display:inline; overflow:hidden; float:left; color:#666666; line-height:28px;}
+.sousuo { width:156px; height:19px; overflow:hidden; float:left; border:1px solid #cdcdcd; color:#999999; margin:2px 0 0 29px; display:inline; padding:0 0 0 3px; font-size:14px;}
+.btn { width:29px; height:21px; background: url(/template/marry/images_marry/btn.jpg) no-repeat; overflow:hidden; float:left; margin-top:2px; display:inline; cursor:pointer;}
+.login { height:21px; margin-top:2px; line-height:22px; display:inline; overflow:hidden; float:right; color:#999999;}
+.login a { width:35px; height:11px; color:#999999; padding:5px 5px 5px 5px;}
+.login a:hover { background-color:#808080; color:#FFFFFF; text-decoration:none; }
+.head_bg { width:100%; height:105px; margin:0 auto; background: url(/template/marry/images_marry/head_bg.jpg) no-repeat center;}
+
+#um { padding:0;}

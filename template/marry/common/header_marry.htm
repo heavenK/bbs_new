@@ -1,0 +1,89 @@
+<!--{if $_GET['mod'] == 'spacecp'}-->
+	<!--{subtemplate home/space_header}-->
+	<!--{if $_G['basescript'] == 'forum' && $_G['setting']['archiver']}-->
+		<link rel="archives" title="$_G['setting']['bbname']" href="{$_G[siteurl]}archiver/" />
+	<!--{/if}-->
+	<!--{if !empty($rsshead)}-->$rsshead<!--{/if}-->
+	<!--{if widthauto()}-->
+		<link rel="stylesheet" id="css_widthauto" type="text/css" href="data/cache/style_{STYLEID}_widthauto.css?{VERHASH}" />
+		<script type="text/javascript">HTMLNODE.className += ' widthauto'</script>
+	<!--{/if}-->
+	<!--{if $_G['basescript'] == 'forum' || $_G['basescript'] == 'group'}-->
+		<script type="text/javascript" src="{$_G[setting][jspath]}forum.js?{VERHASH}"></script>
+	<!--{elseif $_G['basescript'] == 'home' || $_G['basescript'] == 'userapp'}-->
+		<script type="text/javascript" src="{$_G[setting][jspath]}home.js?{VERHASH}"></script>
+	<!--{elseif $_G['basescript'] == 'portal'}-->
+		<script type="text/javascript" src="{$_G[setting][jspath]}portal.js?{VERHASH}"></script>
+	<!--{/if}-->
+	<!--{if $_G['basescript'] != 'portal' && $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->
+		<script type="text/javascript" src="{$_G[setting][jspath]}portal.js?{VERHASH}"></script>
+	<!--{/if}-->
+	<!--{if $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->
+	<link rel="stylesheet" type="text/css" id="diy_common" href="data/cache/style_{STYLEID}_css_diy.css?{VERHASH}" />
+	<!--{/if}-->
+    <script type="text/javascript" src="{$_G[setting][jspath]}logging.js?{VERHASH}"></script>
+    <script src="template/marry/js/logging.js" type="text/javascript"></script>
+	<script src="template/marry/js/jquery-1.4.2.js" type="text/javascript"></script>
+    
+	<script src="template/marry/js/hide_show_marry.js" type="text/javascript"></script>
+    <script type="text/javascript" src="template/marry/js/js.js"></script>
+    
+<!--{else}-->
+
+	<!--{subtemplate common/marry_header_top}-->
+    
+                
+          <div class="head_bg"></div><!--头部背景-->
+                
+          <div class="box"><!--整体-->
+                <div class="main_nav">
+                    <a href="#" target="">首页</a>
+                    <a href="#" target="">我要结婚</a>
+                    <a href="#" target="">婚庆大集市</a>
+                    <a href="#" target="">结婚俱乐部</a>
+                   
+                    <span>官方QQ群:9875689902</span>
+                    <div class="left_bg"><img src="/template/marry/images_marry/left_bg.gif" width="88" height="52" border="0" /></div>
+                    <div class="left_bg02"><img src="/template/marry/images_marry/right_bg.gif" width="88" height="52" border="0" /></div>
+                </div>  
+			</div>
+		</div>
+
+		<!--{if !IS_ROBOT}-->
+			<!--{if $_G['uid'] && !empty($_G['style']['extstyle'])}-->
+				<div id="sslct_menu" class="cl p_pop" style="display: none;">
+					<!--{if !$_G[style][defaultextstyle]}--><span class="sslct_btn" onClick="extstyle('')" title="{lang default}"><i></i></span><!--{/if}-->
+					<!--{loop $_G['style']['extstyle'] $extstyle}-->
+						<span class="sslct_btn" onClick="extstyle('$extstyle[0]')" title="$extstyle[1]"><i style='background:$extstyle[2]'></i></span>
+					<!--{/loop}-->
+				</div>
+			<!--{/if}-->
+
+				<div id="qmenu_menu" class="p_pop {if !$_G['uid']}blk{/if}" style="display: none;">
+					<!--{if $_G['uid']}-->
+					<ul>
+						<!--{loop $_G['setting']['mynavs'] $nav}-->
+							<!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->
+								<li>$nav[code]</li>
+							<!--{/if}-->
+						<!--{/loop}-->
+					</ul>
+					<!--{elseif $_G[connectguest]}-->
+						<div class="ptm pbw hm">
+							{lang connect_fill_profile_to_visit}
+						</div>
+					<!--{else}-->
+						<div class="ptm pbw hm">
+							{lang my_nav_login}
+						</div>
+					<!--{/if}-->
+				</div>
+		<!--{/if}-->
+
+		
+
+		<!--{hook/global_header}-->
+	<!--{/if}-->
+
+	<div id="wp" class="wp">
+<!--{/if}-->
