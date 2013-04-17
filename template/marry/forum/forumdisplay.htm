@@ -22,7 +22,7 @@
 <div class="boardnav ks_marry_boardnav">
 	<div id="ct" class="wp cl{if $_G['forum']['allowside']} ct2{/if}"{if $leftside} style="margin-left:{$_G['leftsidewidth_mwidth']}px"{/if}>
 		<!--{if $leftside}-->
-			<div id="sd_bdl" class="bdl" onmouseover="showMenu({'ctrlid':this.id, 'pos':'dz'});" style="width:{$_G['setting']['leftsidewidth']}px;margin-left:-{$_G['leftsidewidth_mwidth']}px; border:1px solid #ececec; background:#f4f4f4;">
+			<div id="sd_bdl" class="bdl ks_marry_left" onmouseover="showMenu({'ctrlid':this.id, 'pos':'dz'});" style="width:{$_G['setting']['leftsidewidth']}px;margin-left:-{$_G['leftsidewidth_mwidth']}px; border:1px solid #ececec; background:#f4f4f4;">
 				<!--[diy=diyleftsidetop]--><div id="diyleftsidetop" class="area"></div><!--[/diy]-->
 				<div class="ks_marry_list_leftbav">
                     <em>$_G['forum']['name']</em>
@@ -49,6 +49,14 @@
 				<div class="ks_marry_other_a">
                 	<!--[diy=marrylistleftamong]--><div id="marrylistleftamong" class="area"></div><!--[/diy]-->
                 </div>
+                <div class="ks_marry_left_poster">
+                    <!--{ad/custom_11}-->
+                    <!--{ad/custom_11}-->
+                    <!--{ad/custom_11}-->
+                    <!--{ad/custom_11}-->
+                    <!--{ad/custom_11}-->
+                    <!--{ad/custom_11}-->
+                </div>
 			</div>
 		<!--{/if}-->
 		
@@ -58,9 +66,18 @@
 
 			<!--{if $subexists && $_G['page'] == 1}--><!--{template forum/forumdisplay_subforum}--><!--{/if}-->
 
-			<div class="drag">
+			<div class="drag ks_marry_list_rec">
+            	<div class="ks_marry_btn">
+                	<a href="javascript:;" id="newspecial"{if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']} onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=$_G[fid]')"{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=$_G[fid]';return false;"{/if} title="{lang send_posts}" class="kaiser_marry_btn_01"></a>
+                    <a href="javascript:;" id="newspecial"{if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']} onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=$_G[fid]&special=3')"{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=$_G[fid]&special=3';return false;"{/if} title="{lang send_posts}" class="kaiser_marry_btn_02"></a>
+                    <a href="javascript:;" id="newspecial"{if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']} onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=$_G[fid]&special=1')"{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=$_G[fid]&special=1';return false;"{/if} title="{lang send_posts}" class="kaiser_marry_btn_03"></a>
+    				<!--{hook/forumdisplay_postbutton_top}-->
+                </div>
 				<!--[diy=diy4]--><div id="diy4" class="area"></div><!--[/diy]-->
 			</div>
+            <!--<div class="ks_marry_list_rec">
+            	
+            </div>-->
 
 			<!--{if !empty($_G['forum']['recommendlist'])}-->
 				<div class="bm bmw">
