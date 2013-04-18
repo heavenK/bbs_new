@@ -33,9 +33,24 @@
     <script type="text/javascript" src="{$_G[setting][jspath]}logging.js?{VERHASH}"></script>
     <script src="template/marry/js/logging.js" type="text/javascript"></script>
 	<script src="template/marry/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="template/marry/js/hide_show_marry.js" type="text/javascript"></script>
     
+	<script type="text/jscript">/*酒店品牌LOGO渐变JS*/
+		jQuery(function(){
+		jQuery(".albumIndex .posdiv").each(function() {
+				jQuery(this).hover(function() {
+					jQuery(this).siblings().find(".mask").stop();
+					jQuery(this).siblings().find(".mask").fadeTo("fast",0.3);
+				},
+				function() {
+					jQuery(this).siblings().find(".mask").stop();
+					jQuery(this).siblings().find(".mask").fadeTo("fast",0);
+				});
+			});
+		})
+    </script>
 
-	<script language="javascript">
+	<script language="javascript">/*页面头部入口导航JS*/
         jQuery(function(){
           //当鼠标滑入时将div的class换成divOver
           jQuery('.rukou,.rukou_nav').hover(function(){
@@ -51,34 +66,17 @@
         });
     </script> 
 
-	<script type="text/javascript">
-    var jq = jQuery.noConflict(); 
-    jq(document).ready(function(){
-      
-      jq("#ss, #show").hover(function(){
-      jq(".main_nav").show();
-      },function (){jq(".main_nav").hide();});
-    
-    });
+	<script type="text/javascript">/*页面顶部DIY模块JS*/
+		var jq = jQuery.noConflict(); 
+		jq(document).ready(function(){
+		  
+		  jq("#ss, #show").hover(function(){
+		  jq(".main_nav").show();
+		  },function (){jq(".main_nav").hide();});
+		
+		});
     </script>
     	
-	<script type="text/jscript">
-	$(function(){
-	$(".albumIndex .posdiv").each(function() {
-			$(this).hover(function() {
-				$(this).siblings().find(".mask").stop();
-				$(this).find(".albumTitle").stop();
-				$(this).siblings().find(".mask").fadeTo("fast",0.3);
-				$(this).find(".albumTitle").fadeTo("fast",0.7);
-			},
-			function() {
-				$(this).siblings().find(".mask").stop();
-				$(this).siblings().find(".mask").fadeTo("fast",0);
-				$(this).find(".albumTitle").hide();
-			});
-		});
-	})
-	</script>
 
 </head>
 
@@ -117,7 +115,7 @@
                         <div class="top_logo">
                             <a href="./" target="_blank"><img src="/template/marry/images_marry/54_logo_01.jpg" width="60" height="25" border="0" /></a>
                         </div>
-                        <div class="top_nav" style=" font-family:'宋体';">
+                        <div class="top_nav">
                             <div class="rukou"><a style="cursor:pointer;"></a></div>
                             <div class="rukou_nav"><!--关于我们-->
                                 <ul>

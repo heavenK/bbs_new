@@ -1,9 +1,17 @@
 <!--{subtemplate common/header_marry}-->
 <style id="diy_style" type="text/css"></style>
-
+<script type="text/javascript" src="template/marry/js/js.js"></script>
 	<script src="template/marry/js/focus_marry.js" type="text/javascript"></script>
-
+<div id="tbox">
+	<a id="gotop" href="javascript:void(0)" onfocus="this.blur()"></a>
+	<a id="jianyi" href="#xyjd" onfocus="this.blur()">œ≤—Áæ∆µÍ</a>
+    <a id="jianyi" href="#hssy" onfocus="this.blur()">ªÈ…¥…„”∞</a>
+    <a id="jianyi" href="#hlfw" onfocus="this.blur()">ªÈ¿Ò∑˛ŒÒ</a>
+    <a id="jianyi" href="#zgbq" onfocus="this.blur()">÷Èπ‚±¶∆¯</a>
+    <a id="jianyi" href="#mylx" onfocus="this.blur()">√€‘¬¬√––</a>
+</div>
 <div id="ct" class="wp cl{if $_G['setting']['forumallowside']} ct2{/if}">
+
 	<div class="mn" style="float:left;">
 		<div class="wp mtn">
 			<div class="news"><!--BBSÃ˚◊”-->
@@ -66,60 +74,138 @@
                 </div>
             </div> 
             
-            <div class="hotel"><!--œ≤—Áæ∆µÍ-->
+            <div class="hotel" id="xyjd"><!--œ≤—Áæ∆µÍ-->
                 <dl>
                     <dd></dd>
                     <dt><a href="#" target="_blank"></a></dt>
                 </dl>
         
                 <div class="albumIndex">
-                    <div class="albumIndex_1 posdiv">
-                        <a href="#" target="_blank"><img src="/template/marry/images_marry/pinpdai_logo.jpg" width="120" height="60" /><div class="mask" id="m1"> </div></a>
-                    </div>
-                    <div class="albumIndex_2 posdiv">
-                        <a href="#" target="_blank"><img src="/template/marry/images_marry/pinpdai_logo_02.jpg" width="120" height="60" /><div class="mask" id="m2"> </div></a>
-                    </div>
-                    <div class="albumIndex_3 posdiv">
-                        <a href="#" target="_blank"><img src="/template/marry/images_marry/pinpdai_logo_02.jpg" width="120" height="60" /><div class="mask" id="m3"> </div></a>
-                    </div>
-                    <div class="albumIndex_4 posdiv">
-                        <a href="#" target="_blank"><img src="/template/marry/images_marry/pinpdai_logo.jpg" width="120" height="60" /><div class="mask" id="m4"> </div></a>
-                    </div>
-                    <div class="albumIndex_5 posdiv">
-                        <a href="#" target="_blank"><img src="/template/marry/images_marry/pinpdai_logo.jpg" width="120" height="60" /><div class="mask" id="m5"> </div></a>
-                    </div>
-                    <div class="albumIndex_6 posdiv">
-                        <a href="#" target="_blank"><img src="/template/marry/images_marry/pinpdai_logo_02.jpg" width="120" height="60" /><div class="mask" id="m6"> </div></a>
-                    </div>
-                    <div class="albumIndex_7 posdiv">
-                        <a href="#" target="_blank"><img src="/template/marry/images_marry/pinpdai_logo_02.jpg" width="120" height="60" /><div class="mask" id="m7"> </div></a>
-                    </div>
-                    <div class="albumIndex_8 posdiv">
-                        <a href="#" target="_blank"><img src="/template/marry/images_marry/pinpdai_logo.jpg" width="120" height="60" /><div class="mask" id="m8"> </div></a>
-                    </div>
+                    <!--[diy=posdiv_tt]--><div id="posdiv_tt" class="area"></div><!--[/diy]-->
                 </div>
             
                 <ul class="hotel_pic">
-                    <li><a href="#" target="_blank"><img src="/template/marry/images_marry/ad_03.jpg" width="354" height="170" /></a></li>
-                    <li><a href="#" target="_blank"><img src="/template/marry/images_marry/ad_03.jpg" width="354" height="170" /></a></li>
-                    <li><a href="#" target="_blank"><img src="/template/marry/images_marry/ad_03.jpg" width="354" height="170" /></a></li>
-                    <li><a href="#" target="_blank"><img src="/template/marry/images_marry/ad_03.jpg" width="354" height="170" /></a></li>
+                    <!--[diy=hotel_li_tt]--><div id="hotel_li_tt" class="area"></div><!--[/diy]-->
                 </ul>
             </div>
             
+            <div class="photo" id="hssy"><!--ªÈ…¥…„”∞-->
+                <dl>
+                    <dd></dd>
+                    <dt><a href="#" target="_blank"></a></dt>
+                </dl>
             
+                <div class="albumIndex">
+                    <!--[diy=posdiv_tt_photo]--><div id="posdiv_tt_photo" class="area"></div><!--[/diy]-->
+                </div>
             
+                <ul class="photo_pic">
+                    <!--[diy=photo_li_tt]--><div id="photo_li_tt" class="area"></div><!--[/diy]-->
+                </ul>
+            </div>
             
+            <div class="fuwu" id="hlfw"><!--ªÈ¿Ò∑˛ŒÒ-->
+                <dl>
+                    <dd></dd>
+                    <dt><a href="#" target="_blank"></a></dt>
+                </dl>
             
-            
-		</div>
+                <div class="albumIndex">
+                    <!--[diy=fuwu_tt_photo]--><div id="fuwu_tt_photo" class="area"></div><!--[/diy]-->
+                </div>
+        
+                <div class="fuwu_pic">
+                    <div class="hdp_01_02">
+                        <div class="hdp_01">
+                            <!--[diy=hdp_01_tt]--><div id="hdp_01_tt" class="area"></div><!--[/diy]-->
+                        </div>	
+                        <div class="hdp_02">
+                            <!--[diy=hdp_02_tt]--><div id="hdp_02_tt" class="area"></div><!--[/diy]-->
+                        </div>
+                    </div>
+                    <div class="hdp_03">
+                        <!--[diy=hdp_03_tt]--><div id="hdp_03_tt" class="area"></div><!--[/diy]-->
+                    </div>
+                    <div class="hdp_04_05">
+                        <div class="hdp_04">
+                            <!--[diy=hdp_04_tt]--><div id="hdp_04_tt" class="area"></div><!--[/diy]-->
+                        </div>	
+                        <div class="hdp_05">
+                            <!--[diy=hdp_05_tt]--><div id="hdp_05_tt" class="area"></div><!--[/diy]-->
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		
-
-		
+            <div class="zhubao" id="zgbq"><!--÷Èπ‚±¶∆¯-->
+                <dl>
+                    <dd></dd>
+                    <dt><a href="#" target="_blank"></a></dt>
+                </dl>
+            
+                <div class="albumIndex">
+                    <!--[diy=zhubao_tt_photo]--><div id="zhubao_tt_photo" class="area"></div><!--[/diy]-->
+                </div>
+                
+                <div class="zhubao_pic">
+                    <div class="hdp_06_09">
+                        <div class="hdp_06">
+                            <!--[diy=hdp_06_tt]--><div id="hdp_06_tt" class="area"></div><!--[/diy]-->
+                        </div>	
+                        <div class="hdp_07">
+                            <!--[diy=hdp_07_tt]--><div id="hdp_07_tt" class="area"></div><!--[/diy]-->
+                        </div>
+                        <div class="hdp_08">
+                            <!--[diy=hdp_08_tt]--><div id="hdp_08_tt" class="area"></div><!--[/diy]-->
+                        </div>
+                        <div class="hdp_09">
+                            <!--[diy=hdp_09_tt]--><div id="hdp_09_tt" class="area"></div><!--[/diy]-->
+                        </div>
+                    </div>
+                    <div class="hdp_10_15">
+                        <div class="hdp_10">
+                            <!--[diy=hdp_10_tt]--><div id="hdp_10_tt" class="area"></div><!--[/diy]-->
+                        </div>
+                        <div class="hdp_11">
+                            <!--[diy=hdp_11_tt]--><div id="hdp_11_tt" class="area"></div><!--[/diy]-->
+                        </div>
+                        <div class="hdp_12">
+                            <!--[diy=hdp_12_tt]--><div id="hdp_12_tt" class="area"></div><!--[/diy]-->
+                        </div>
+                        <div class="hdp_13">
+                            <!--[diy=hdp_13_tt]--><div id="hdp_13_tt" class="area"></div><!--[/diy]-->
+                        </div>
+                        <div class="hdp_14">
+                            <!--[diy=hdp_14_tt]--><div id="hdp_14_tt" class="area"></div><!--[/diy]-->
+                        </div>
+                        <div class="hdp_15">
+                            <!--[diy=hdp_15_tt]--><div id="hdp_15_tt" class="area"></div><!--[/diy]-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+			<div class="miyue" id="mylx"><!--√€‘¬¬√––-->
+                <dl>
+                    <dd></dd>
+                    <dt><a href="#" target="_blank"></a></dt>
+                </dl>
+            
+                <div class="albumIndex">
+                    <!--[diy=miyue_tt_photo]--><div id="miyue_tt_photo" class="area"></div><!--[/diy]-->
+                </div>
+            
+                <ul class="photo_pic">
+                    <!--[diy=photo_pic_tt_photo]--><div id="photo_pic_tt_photo" class="area"></div><!--[/diy]-->
+                </ul>
+            </div>
+        
+        </div>
 	</div>
+    
 </div>
 
+<!--{subtemplate common/marry_footer}-->
 
 <style>
 #wp .wp { width:1000px;}

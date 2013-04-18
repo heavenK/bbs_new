@@ -56,7 +56,7 @@
 /*BBS中间帖子*/
 .bbs_tiezi 				  { width:400px; height:400px; overflow:hidden; float:left; margin:10px 10px 0 15px; display:inline;  }
 .bbs_tiezi_top			  { width:400px; height:94px; overflow:hidden; float:left;}
-.bbs_tiezi_top h1 		  { width:390px; height:30px; overflow:hidden; float:left; background-color:#ffebec; line-height:34px; padding-left:10px; font-weight:400; font-family:"Microsoft YaHei","黑体","宋体";}
+.bbs_tiezi_top h1 		  { width:390px; height:30px; overflow:hidden; float:left; background-color:#ffebec; line-height:32px; _line-height:34px !important; padding-left:10px; font-weight:400; font-family:"Microsoft YaHei","黑体","宋体";}
 .bbs_tiezi_top h1 a 	  { color:#403b3b; font-size:20px;}
 .bbs_tiezi_top h1 a:hover { text-decoration:none; color:#f05960;}
 .bbs_tiezi_top span 	  { width:372px; height:35px; overflow:hidden; float:left; padding:12px 22px 17px 6px; color:#666; line-height:20px;}
@@ -116,25 +116,9 @@
 .hotel_left_logo     { width:260px; height:350px; overflow:hidden; float:left; margin:10px 0 0 10px; display:inline;}
 
 /*album*/
-.albumIndex  { position:relative; height:280px; width:258px; border-left:1px solid #eeeeee; border-top:1px solid #eeeeee; overflow:hidden; float:left; margin-left:10px; display:inline; }
-.albumIndex_1{ position:absolute; left:0px; top:0; width:124px; padding:4px 0 0 4px; border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee; height:65px; overflow:hidden; float:left; }
-.albumIndex_2{ position:absolute; left:129px; top:0; width:124px; padding:4px 0 0 4px; border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee; height:65px; overflow:hidden; float:left;}
-.albumIndex_3{ position:absolute; left:0; top:70px; width:124px; padding:4px 0 0 4px; border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee; height:65px; overflow:hidden; float:left;}
-.albumIndex_4{ position:absolute; left:129px; top:70px; width:124px; padding:4px 0 0 4px; border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee; height:65px; overflow:hidden; float:left;}
-.albumIndex_5{ position:absolute; left:0; top:140px; width:124px; padding:4px 0 0 4px; border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee; height:65px; overflow:hidden; float:left;}
-.albumIndex_6{ position:absolute; left:129px; top:140px; width:124px; padding:4px 0 0 4px; border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee; height:65px; overflow:hidden; float:left;}
-.albumIndex_7{ position:absolute; left:0px; top:210px; width:124px; padding:4px 0 0 4px; border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee; height:65px; overflow:hidden; float:left;}
-.albumIndex_8{ position:absolute; left:129px; top:210px; width:124px; padding:4px 0 0 4px; border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee; height:65px; overflow:hidden; float:left;}
-.mask        { position: absolute;	background: #000; opacity: 0; filter: alpha(opacity=0);	left: 0; top: 0;  cursor:pointer;}
-.maskblack   { position: absolute;	background: #000; opacity: 0; filter: alpha(opacity=0);	left: 0; top: 0; width:128px; height:69px; cursor:pointer;}
-.albumIndex #m1{ width:128px; height:69px; }
-.albumIndex #m2{ width:128px; height:69px; }
-.albumIndex #m3{ width:128px; height:69px; }
-.albumIndex #m4{ width:128px; height:69px; }
-.albumIndex #m5{ width:128px; height:69px; }
-.albumIndex #m6{ width:128px; height:69px; }
-.albumIndex #m7{ width:128px; height:69px; }
-.albumIndex #m8{ width:128px; height:69px; }
+.albumIndex  {  height:280px; width:258px; border-left:1px solid #eeeeee; border-top:1px solid #eeeeee; overflow:hidden; float:left; margin-left:10px; display:inline; }
+.posdiv{ position:relative; width:124px; padding:4px 0 0 4px; border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee; height:65px; overflow:hidden; float:left; }
+.mask        { background: #000; opacity: 0; filter: alpha(opacity=0);	left: 0; top: 0; position:absolute;  cursor:pointer; width:128px; height:69px; }
 
 .hotel_pic    { width:718px; height:348px; overflow:hidden; float:left; margin:0 0 0 10px; display:inline;}
 .hotel_pic li { width:354px; height:170px; overflow:hidden; float:left; margin:0 3px 3px 0; display:inline;}
@@ -216,10 +200,10 @@
 /*底部*/
 .footer			   { width:100%; height:221px; background:url(/template/marry/images_marry/bottom_bg.gif) repeat-x; margin-top:30px; display:inline; text-align:center; color:#FFFFFF; overflow:hidden; float:left; }
 .end 			   { width:1000px; height:219px; margin:0 auto;}
-.end_xinxi 		   { width:820px; height:45px; overflow:hidden; float:left; margin:24px 0 0 155px; display:inline;}
-.end_logo 		   { width:137px; height:45px; overflow:hidden; float:left; border-right:1px solid #cccccc; margin-right:19px; display:inlin e;}
+.end_xinxi 		   { width:820px; height:48px; overflow:hidden; float:left; margin:24px 0 0 155px; display:inline;}
+.end_logo 		   { width:137px; height:48px; overflow:hidden; float:left; border-right:1px solid #cccccc; margin-right:19px; display:inlin e;}
 .end_logo a 	   { overflow:hidden; float:left;}
-.end_xinxi dl 	   { width:545px; height:45px; overflow:hidden; float:left; color:#666666; text-align:left;}
+.end_xinxi dl 	   { width:545px; height:48px; overflow:hidden; float:left; color:#666666; text-align:left;}
 .end_xinxi dl dd   { width:545px; height:18px; margin-top:4px; display:inline; margin-bottom:8px; overflow:hidden; float:left;}
 .end_xinxi dl dd a { color:#666666;}
 .end_xinxi dl dt   { width:545px; height:18px; overflow:hidden; float:left; }
@@ -230,7 +214,7 @@
 _position:absolute;
 _bottom:auto;
 _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
-_margin-bottom:10px;
+_margin-bottom:10px; z-index:9999;
 }/*解决IE6下不兼容 position:fixed 的问题*/
 #jianyi{ width:24px; height:39px; background-color:#FFFFFF; line-height:16px; color:#8c8c8c; padding:11px 13px 0 14px; margin-top:5px; display:inline; float:left; cursor:pointer; overflow:hidden;}
 #gotop{ width:50px; height:50px; background:url(/template/marry/images_marry/top01.png) no-repeat; position:absolute; top:-50px; left:0; display:none; cursor:pointer; float:left; overflow:hidden;} 

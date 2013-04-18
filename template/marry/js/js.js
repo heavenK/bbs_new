@@ -1,29 +1,32 @@
+
+var jq = jQuery.noConflict(); 
+
 function a(x,y){
-	l = $('.box').offset().left;
-	w = $('.box').width();
-	$('#tbox').css('left',(l + w + x) + 'px');
-	$('#tbox').css('bottom',y + 'px');
+	l = jq('.box').offset().left;
+	w = jq('.box').width();
+	jq('#tbox').css('left',(l + w + x) + 'px');
+	jq('#tbox').css('bottom',y + 'px');
 }
 function b(){
-	h = $(window).height();
-	t = $(document).scrollTop();
+	h = jq(window).height();
+	t = jq(document).scrollTop();
 	if(t > h){
-		$('#gotop').fadeIn('slow');
+		jq('#gotop').fadeIn('slow');
 	}else{
-		$('#gotop').fadeOut('slow');
+		jq('#gotop').fadeOut('slow');
 	}
 }
-$(document).ready(function(e) {		
+jq(document).ready(function(e) {		
 	a(10,10);//#tbox的div距浏览器底部和页面内容区域右侧的距离
 	b();
-	$('#gotop').click(function(){
-		$(document).scrollTop(0);	
+	jq('#gotop').click(function(){
+		jq(document).scrollTop(0);	
 	})
 });
-$(window).resize(function(){
+jq(window).resize(function(){
 	a(10,10);//#tbox的div距浏览器底部和页面内容区域右侧的距离
 });
 
-$(window).scroll(function(e){
+jq(window).scroll(function(e){
 	b();		
 })
