@@ -19,7 +19,7 @@
 <div class="wp">
 	<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
 </div>
-<div class="boardnav ks_marry_boardnav">
+<div class="boardnav ks_marry_boardnav" style=" height:auto !important; height:1668px; min-height:1668px;">
 	<div id="ct" class="wp cl{if $_G['forum']['allowside']} ct2{/if}"{if $leftside} style="margin-left:{$_G['leftsidewidth_mwidth']}px"{/if}>
 		<!--{if $leftside}-->
 			<div id="sd_bdl" class="bdl ks_marry_left" onmouseover="showMenu({'ctrlid':this.id, 'pos':'dz'});" style="width:{$_G['setting']['leftsidewidth']}px;margin-left:-{$_G['leftsidewidth_mwidth']}px; border:1px solid #ececec; background:#f4f4f4;">
@@ -110,18 +110,13 @@
 						<table cellspacing="0" cellpadding="0" class="fl_tb">
 							<!--{loop $recommendgroups $key $group}-->
 							<!--{if $_G['forum']['forumcolumns']}-->
-								<!--{if $key && ($key % $_G['forum']['forumcolumns'] == 0)}-->
-									</tr>
-									<!--{if $key < $_G['forum']['forumcolumns']}-->
-										<tr class="fl_row">
-									<!--{/if}-->
-								<!--{/if}-->
+								
 								<td class="fl_g">
 									<div class="fl_icn_g">
 										<a href="forum.php?mod=group&fid=$group[fid]" title="$group[name]" target="_blank"><img src="$group[icon]" alt="$group[name]" width="32" /></a>
 									</div>
 									<dl>
-										<dt><a href="forum.php?mod=group&fid=$group[fid]" target="_blank">$group[name]</a><span class="xg1 xw0"> ($group[membernum] {lang activity_member_unit})</span>
+										<dt><a href="forum.php?mod=group&fid=$group[fid]" target="_blank">$group[name]</a><span class="xg1 xw0"> ($group[membernum] {lang activity_member_unit})</span></dt>
 										<dd><em>{lang forum_threads}: $group[threads]</em></dd>
 										<dd>
 											<!--{if is_array($group['lastpost'])}-->
@@ -181,6 +176,10 @@
 			<!--{hook/forumdisplay_bottom}-->
 			<!--[diy=diyforumdisplaybottom]--><div id="diyforumdisplaybottom" class="area"></div><!--[/diy]-->
 		</div>
+        <div class="bm bw0 pgs cl kaiser_list_bm_bw0_pgs_cl">
+            <!--{if !$_GET['archiveid']}--><a href="javascript:;" id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})"{if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']} onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=$_G[fid]')"{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=$_G[fid]';return false;"{/if} title="{lang send_posts}" class="kaiser_pn_post_btn"></a><!--{/if}-->
+            <!--{hook/forumdisplay_postbutton_bottom}-->
+        </div>
 
 		<!--{if $_G['forum']['allowside']}-->
 		<div class="sd">
@@ -304,10 +303,7 @@
 <!--{if empty($_G['forum']['picstyle']) && $_GET['orderby'] == 'lastpost' && empty($_GET['filter']) }-->
 	<script type="text/javascript">checkForumnew_handle = setTimeout(function () {checkForumnew($_G[fid], lasttime);}, checkForumtimeout);</script>
 <!--{/if}-->
-<div class="bm bw0 pgs cl kaiser_list_bm_bw0_pgs_cl">
-	<!--{if !$_GET['archiveid']}--><a href="javascript:;" id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})"{if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']} onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=$_G[fid]')"{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=$_G[fid]';return false;"{/if} title="{lang send_posts}" class="kaiser_pn_post_btn"></a><!--{/if}-->
-	<!--{hook/forumdisplay_postbutton_bottom}-->
-</div>
+
 <div class="wp mtn">
 	<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
 </div>
