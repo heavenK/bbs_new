@@ -77,16 +77,16 @@
 <!--{else}-->
 	<!--{subtemplate common/marry_header_top}-->
     			<div class="ks_marry_list_header">
-                    <a class="ks_marry_logo" href="/forum-675-1.html"></a>
+                    <a class="ks_marry_logo" href="/forum.php?gid=1016"></a>
                     <div class="ks_marry_top_ad_01">
-                        <!--{ad/custom_11}-->
+                        <!--{ad/custom_23}-->
                     </div>
                 </div>
                 
                 <div class="nav_st">
                     <div class="nav_second">
                     	<div class="nav_nav">
-                    		<li><a href="/" <!--{if empty($_G['forum']['name'])}-->style=" color:#FFEE9D;"<!--{/if}-->>首页</a></li>
+                    		<li><a href="/forum.php?gid=1016" <!--{if empty($_G['forum']['name'])}-->style=" color:#FFEE9D;"<!--{/if}-->>首页</a></li>
                             <!--{loop $_G['cache']['forums'] $bforum}-->
                                 <!--{if $bforum['fup'] == $_G['forum']['fup'] && $bforum['status']}-->
                                     <li><a href="forum.php?mod=forumdisplay&fid=$bforum[fid]" <!--{if $_G['forum']['name'] == $bforum['name']}-->style=" color:#FFEE9D;"<!--{/if}-->>$bforum['name']</a></li>
@@ -96,7 +96,7 @@
                         <div class="ks_nav_nav_tel">官方QQ群:9875689902</div>
                     </div>
                     <div class="ks_nav_three">
-                    	<!--{ad/custom_11}-->
+                    	<!--{ad/custom_24}-->
                     </div>
                 </div>
 			</div>
