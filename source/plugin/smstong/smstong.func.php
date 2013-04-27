@@ -55,7 +55,9 @@ function sendsms($user, $pass, $mobile, $content, $checkmobile=true, $refno='', 
 		$content = str_replace('10086','1 0 0 8 6',$content);
 
 	//	$smsapi = "api.chanyoo.cn";
-		$smsapi = "202.165.181.81:8021";	//add by zh
+	//	$smsapi = "202.165.181.81:8021";	//add by zh
+		$smsapi = "sms.91gww.com";
+		
 		$charset = "gbk";
 
 		if ($_G['charset'] != "gbk") {
@@ -70,9 +72,11 @@ function sendsms($user, $pass, $mobile, $content, $checkmobile=true, $refno='', 
 
 	//	$sendurl = "http://".$smsapi."/".$charset."/interface/send_sms.aspx?username=".urlencode($user)."&password=".urlencode($pass)."&receiver=".urlencode($mobile)."&content=".urlencode($content)."";
 //----------------add by zh-----------------------------------------------------------------
-		$sendurl = "http://".$smsapi."/HttpInterface/SendSms.php";
+		//$sendurl = "http://".$smsapi."/HttpInterface/SendSms.php";
+		
+		$sendurl = "http://".$smsapi."/api/api.asp";
 
-		$argv = array( 
+		/*$argv = array( 
 			 'uname'=>$user, //提供的账号
 			 'pwd'=>md5($pass), //此处密码需要加密 加密方式为 md5(sn+password) 32位大写
 			 'numbers'=>$mobile,//手机号 多个用英文的逗号隔开 post理论没有长度限制.推荐群发一次小于等于10000个手机号
@@ -80,7 +84,16 @@ function sendsms($user, $pass, $mobile, $content, $checkmobile=true, $refno='', 
 			 'smsid'=>'',
 			 'act'=>'send',//默认空 如果空返回系统生成的标识串 如果传值保证值唯一 成功则返回传入的值
 			 'ext'=>''
+		 );*/
+		 
+		 $argv = array( 
+			 'smsname'=>$user, //提供的账号
+			 'smspwd'=>md5($pass), //此处密码需要加密 加密方式为 md5(sn+password) 32位大写
+			 'mobile'=>$mobile,//手机号 多个用英文的逗号隔开 post理论没有长度限制.推荐群发一次小于等于10000个手机号
+			 'content'=>$content,//短信内容
+			 'apitype'=>'2',
 		 );
+		 
 		 $result = httprequest($sendurl,$argv);
 //--------------------------------------------------------------------------------------------
 	//	$result = httprequest($sendurl);

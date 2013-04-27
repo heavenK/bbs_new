@@ -10,13 +10,18 @@
 define('IN_DISCUZ', TRUE);
 
 //$smsapi = "a1.chanyoo.cn";
-$smsapi = "202.165.181.81:8021";		//add by zh
+//$smsapi = "202.165.181.81:8021";		//add by zh
+$smsapi = "sms.91gww.com";
+
 $charset = "utf8";
 $username = $_GET['username'];
 $password = $_GET['password'];
 
 //$url = "http://".$smsapi."/".$charset."/interface/user_info.aspx?username=".$username."&password=".$password."";
-$url = "http://".$smsapi."/HttpInterface/GetMyFree.php?uname=".$username."&pwd=".$password."&balance=1";	//add by zh
+//$url = "http://".$smsapi."/HttpInterface/GetMyFree.php?uname=".$username."&pwd=".$password."&balance=1";	//add by zh
+
+$url = "http://".$smsapi."/api/api.asp?smsname=".$username."&smspwd=".$password."&apitype=1";
+
 
 require_once('smstong.func.php');
 
