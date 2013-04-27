@@ -21,7 +21,7 @@ $password = $_GET['password'];
 //$url = "http://".$smsapi."/".$charset."/interface/user_info.aspx?username=".$username."&password=".$password."";
 //$url = "http://".$smsapi."/HttpInterface/GetMyFree.php?uname=".$username."&pwd=".$password."&balance=1";	//add by zh
 
-$url = "http://".$smsapi."/api/api.asp?smsname=".$username."&smspwd=123456&apitype=1";
+$url = "http://".$smsapi."/api/api.asp?smsname=".$username."&smspwd=".$password."&apitype=1";
 
 
 require_once('smstong.func.php');
