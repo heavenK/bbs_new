@@ -88,7 +88,7 @@ function sendsms($user, $pass, $mobile, $content, $checkmobile=true, $refno='', 
 		 
 		 $argv = array( 
 			 'smsname'=>$user, //提供的账号
-			 'smspwd'=>md5($pass), //此处密码需要加密 加密方式为 md5(sn+password) 32位大写
+			 'smspwd'=>$pass, //此处密码需要加密 加密方式为 md5(sn+password) 32位大写
 			 'mobile'=>$mobile,//手机号 多个用英文的逗号隔开 post理论没有长度限制.推荐群发一次小于等于10000个手机号
 			 'content'=>$content,//短信内容
 			 'apitype'=>'2',
