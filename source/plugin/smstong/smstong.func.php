@@ -56,7 +56,7 @@ function sendsms($user, $pass, $mobile, $content, $checkmobile=true, $refno='', 
 
 	//	$smsapi = "api.chanyoo.cn";
 	//	$smsapi = "202.165.181.81:8021";	//add by zh
-		$smsapi = "sms.91gww.com";
+		$smsapi = "sms.91gww.com";	// modify by heavenk
 		
 		$charset = "gbk";
 
@@ -86,6 +86,7 @@ function sendsms($user, $pass, $mobile, $content, $checkmobile=true, $refno='', 
 			 'ext'=>''
 		 );*/
 		 
+		 // modify by heavenk
 		 $argv = array( 
 			 'smsname'=>$user, //提供的账号
 			 'smspwd'=>$pass, //此处密码需要加密 加密方式为 md5(sn+password) 32位大写

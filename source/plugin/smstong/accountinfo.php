@@ -11,17 +11,17 @@ define('IN_DISCUZ', TRUE);
 
 //$smsapi = "a1.chanyoo.cn";
 //$smsapi = "202.165.181.81:8021";		//add by zh
-$smsapi = "sms.91gww.com";
+$smsapi = "sms.91gww.com";	// modify by heavenk
 
 //$charset = "utf8";
-$charset = "gb2312";
+$charset = "gb2312"; 	// modify by heavenk
 $username = $_GET['username'];
 $password = $_GET['password'];
 
 //$url = "http://".$smsapi."/".$charset."/interface/user_info.aspx?username=".$username."&password=".$password."";
 //$url = "http://".$smsapi."/HttpInterface/GetMyFree.php?uname=".$username."&pwd=".$password."&balance=1";	//add by zh
 
-$url = "http://".$smsapi."/api/api.asp?smsname=".$username."&smspwd=we54838&apitype=1";
+$url = "http://".$smsapi."/api/api.asp?smsname=".$username."&smspwd=".$password."&apitype=1";	// modify by heavenk
 
 
 require_once('smstong.func.php');
